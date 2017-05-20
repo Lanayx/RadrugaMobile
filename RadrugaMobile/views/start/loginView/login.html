@@ -1,0 +1,31 @@
+<div id="vLogin"
+     data-role="view"
+     data-title="Login"
+     data-init="app.appInit.loginViewModelInit"
+     data-show="app.appInit.loginViewModelShow"
+     data-hide="app.appInit.loginViewModelHide"
+     data-layout="start-layout"
+     class="verticalViewGradient">
+    <div class="formContent">
+
+        <input type="email" data-bind="value: email" required="required" id="txtEmail" placeholder="Email" />
+        <input type="password" data-bind="value: password, attr:{placeholder:passwordRes}" required="required" id="txtPassword" />
+
+        <!--<a id="forgotPassord" data-bind="click: onForgotPassword" class="link">
+            <div data-bind="text:forgotPasswordRes"></div>
+        </a>-->
+
+        <a id="login" data-role="button" data-bind="click: onLogin" class="greenButton">
+            <div data-bind="text:loginRes"></div>
+        </a>
+
+        <a id="navigateToRegistration" data-role="button" data-bind="click: onRegister" class="orangeButton">
+            <div data-bind="text:regEmailRes"></div>
+        </a>
+
+        <a id="backToEnter" data-bind="click: backToEnter" data-role="button" class="link">
+            <div data-bind="text:backRes"></div>
+        </a>
+    </div>
+
+</div>

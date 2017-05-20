@@ -1,0 +1,269 @@
+@import "../kendo/kendo-mobile/common/mixins";
+@import "../variables";
+@import "../mixins";
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=email],
+input[type=tel],
+input[type=url] {
+    border-radius: @borderRadius;
+    background-color: #f7e2cf;
+    border-style: none;
+    .box-shadow(~"0 .1rem #fff , 0 -.1rem #ddcab9");
+    color: #8e919d;
+    padding-left: 2rem;
+    height: 3.2rem;
+    .box-sizing(border-box);
+    width: 100%;
+    font-size: @mediumFontSize;
+}
+
+textarea {
+    border-radius: @borderRadius;
+    background-color: #f7e2cf;
+    border-style: none;
+    .box-shadow(~"0 .1rem #fff , 0 -.1rem #ddcab9");
+    color: #8e919d;
+    .box-sizing(border-box);
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .5rem 1rem 0;
+    height: auto;
+    resize: none;
+    overflow: auto;
+}
+
+progress {
+    width: 100%;
+    border: 0;
+    border-radius: @borderRadius;
+    height: .9rem;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: @borderRadius;
+}
+
+progress::-webkit-progress-value {
+    border-radius: @borderRadius;
+}
+
+progress::-moz-progress-bar {
+    border-radius: @borderRadius;
+}
+
+
+.formContent {
+    width: 81%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.mediumIcon {
+    height: @mediumIconSize;
+    width: @mediumIconSize;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bigIcon {
+    height: @bigIconSize;
+    width: @bigIconSize;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.smallIcon {
+    height: @smallIconSize;
+    width: @smallIconSize;
+    background-repeat: no-repeat;
+}
+
+.horizontalLine {
+    border-top: 2px solid #f5e1cd;
+    border-bottom: 1px solid white;
+}
+
+
+
+.verticalLine {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: .15em;
+    background-color: #f5e1cd;
+    margin-left: 18.3%;
+}
+
+
+.headCommon {
+    overflow: auto;
+    background-color: @blackColor;
+}
+
+.missionHeader {
+    .flexbox();
+    .flex-direction(row);
+    .flex-justify-content(space-between);
+
+    & > div {
+        width: 30%;
+    }
+
+    .missionImageContainer {
+        margin: 1rem 0 .5rem 0;
+        width: 40%;
+        position: relative;
+    }
+
+    .imageCover {
+        padding-top: 99%; //STUB! for android
+        width: 89%;
+        margin-left: 6%;
+    }
+
+    .imageBorder {
+        background-image: url(../svg/missionImageFrame.svg);
+        padding-top: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .missionImage {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.coinsCountWrapper {
+    position: relative;
+    text-align: center;
+}
+
+.coinsLogo {
+    display: block;
+    background-image: url(../../styles/svg/bag.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.coinsCount {
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+.closeIcon {
+    background-image: url(../svg/close.svg);
+    float: right;
+    margin: 1rem;
+}
+
+.photoIcon {
+    background-image: url(../svg/photo.svg);
+}
+
+.removePhotoIcon {
+    position: absolute;
+    top: -@smallIconSize/2 + @smallIconSize/5;
+    right: -@smallIconSize/2 + @smallIconSize/5;
+    height: @smallIconSize;
+    width: @smallIconSize;
+    background-image: url(../svg/removePhoto.svg);
+}
+
+.backIcon {
+    background-image: url(../svg/backArrow.svg);
+    float: left;
+    margin: 1rem;
+}
+
+.hintIcon {
+    background-image: url(../svg/key4.svg);
+    float: right;
+    margin: 1rem;
+
+    & > a {
+        display: block;
+        height: 100%;
+    }
+}
+
+a.link {
+    color: @blueTextColor;
+}
+
+.star {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.starFull {
+    background-image: url(../svg/starFull.svg);
+}
+
+.starHalf {
+    background-image: url(../svg/starHalf.svg);
+}
+
+.starEmpty {
+    background-image: url(../svg/starEmpty.svg);
+}
+
+.km-view.verticalViewGradient {
+    background: linear-gradient(#ffffff, #fff3e0);
+}
+
+.km-view.horizontalViewGradient {
+    background: linear-gradient(to left, #ffffff, #fff3e0);
+}
+
+.km-button {
+    border-radius: @borderRadius;
+    padding: .8em;
+}
+
+.km-button.blueButton {
+    background-color: @blueColor;
+    color: white;
+    .box-shadow(~"0 .1rem #499eb6 , 0 -.1rem #ceeef6");
+}
+
+.km-button.orangeButton {
+    background-color: @orangeColor;
+    color: white;
+    .box-shadow(~"0 .1rem #cc9a5d , 0 -.1rem #ffecd5");
+}
+
+.km-button.greenButton {
+    background-color: @greenColor;
+    color: white;
+    .box-shadow(~"0 .1rem #3ca879 , 0 -.1rem #c9f1e0");
+}
+
+.km-button.redButton {
+    background-color: @redColor;
+    color: white;
+    .box-shadow(~"0 .1rem #cc7868 , 0 -.1rem #ffe0d9");
+}
+
+.km-list > li {
+    padding: 0;
+}

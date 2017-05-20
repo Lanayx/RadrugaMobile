@@ -1,0 +1,25 @@
+<div id="vRequiredFields"
+     data-role="view"
+     data-title="Required Fields"
+     data-init="app.appInit.requiredFieldsViewModelInit"
+     data-show="app.appInit.requiredFieldsViewModelShow"
+     data-hide="app.appInit.requiredFieldsViewModelHide"
+     data-layout="start-layout"
+     class="verticalViewGradient">
+
+    <div class="formContent">
+        <input type="text" data-bind="value: nickName, visible: nickNameVisible, attr:{placeholder:nickNameRes}" required="required" maxlength="20"/>
+        <input type="text" id="txtDateOfBirth" data-bind="value: dateOfBirth, visible: dateOfBirthVisible, attr:{placeholder:dateOfBirthRes}" required="required"/>
+        <div data-bind="visible: sexVisible">
+            <select id="ddSex" data-role="none" data-bind="mobiscroll-select: sex"
+                    data-mobiscroll-options="{ placeholder:$root.sexRes, theme: 'mobiscroll-dark', display: 'bottom', lang: $root.msLang }">
+                <option value="Male" data-bind="text: maleRes"></option>
+                <option value="Female" data-bind="text: femaleRes"></option>
+            </select>
+        </div>
+        <a data-role="button" data-bind="click: fieldsFilled" class="greenButton">
+            <div data-bind="text:readyRes"></div>
+        </a>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+#missionBody {
+  margin: 2%;
+}
+#missionBody .missionHead {
+  text-align: center;
+}
+#missionBody .star {
+  height: 16px;
+  width: 16px;
+}
+#missionBody .missionDifficulty {
+  margin-top: 2%;
+}
+#missionBody #missionDetails {
+  margin: 2% 5%;
+}
+#missionFooter {
+  text-align: center;
+}
+#missionFooter .km-button {
+  width: 40%;
+  box-sizing: border-box;
+  margin: 4%;
+}

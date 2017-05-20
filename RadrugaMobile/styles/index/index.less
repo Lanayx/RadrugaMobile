@@ -1,0 +1,104 @@
+@import "../variables";
+@import "../kendo/kendo-mobile/common/mixins";
+@import "../mixins";
+
+
+.startHeaderImageOuter {
+    background-color: @blackColor;
+    overflow: hidden;
+    padding-top: 50%;
+}
+
+.startHeaderImage {
+    margin: -50% auto 0;
+    width: 60%;
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../svg/logo.svg);
+}
+
+.startHeaderImageBottom {
+    background-image: url(../svg/logoBottom.svg);
+    padding-top: 10px; //fix for bad pixels ( was 3%)
+}
+
+#vLoading {
+    background-color: @blackColor;
+    text-align: center;
+
+    .km-content {
+        position: absolute;
+        color: white;
+        top: 45%;
+        font-size: @mediumFontSize;
+    }
+}
+
+#vmHints {
+    background-color: white;
+
+    .modalHeader {
+        .flexbox();
+        .flex-direction(row);
+        .flex-justify-content(space-between);
+        background-color: @blackColor;
+
+        & > div {
+            width: 30%;
+        }
+
+        .modalTitle {
+            .flexbox();
+            .flex-direction(column);
+            .flex-justify-content(center);
+            width: 40%;
+            color: white;
+            font-size: @mediumFontSize;
+            text-align: center;
+        }
+    }
+
+    .km-content{
+        text-align: center;
+    }
+
+    .hintsList {
+
+        li {
+            width: 42%;
+            display:inline-block;
+            overflow:visible;
+        }
+
+        .coinsCountWrapper {
+            margin: 1rem;
+            display: block;
+        }
+
+        .coinsLogo {
+            width: 100%;
+            padding-top: 100%;
+        }
+
+        .coinsCount {
+            font-size: @mediumFontSize;
+        }
+
+        .coinsText {
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .hintText{
+        margin:2rem;
+        font-size:@mediumFontSize;
+        line-height:@mediumFontSize * 1.5;
+    }
+}
+
+#missionFooter {
+    background: #ffeacf;
+}

@@ -1,0 +1,18 @@
+{
+    "Framework": "jasmine",
+    "TestHarnessReferenceMode": "AMD",
+    "TestHarnessLocationMode": "SettingsFileAdjacent",
+    "References": [
+        { "Path": "../RadrugaMobile/scripts/libs/require.min.js" },
+        { "Path": "../RadrugaMobile/kendo/js/jquery.min.js" },
+        { "Path": "scripts/mock-ajax.js" },
+        { "Path": "../RadrugaMobile/scripts/tsDefinitions/require.d.ts", "IncludeInTestHarness": "false" },
+        { "Path": "scripts/definitions/jasmine.d.ts", "IncludeInTestHarness": "false" },
+        { "Path": "config.ts" }
+    ],
+    "Tests": [
+        { "Path": "tests", "Include": "*.ts"}
+    ]
+}
+
+

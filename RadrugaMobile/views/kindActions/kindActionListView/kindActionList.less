@@ -1,0 +1,122 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/kendo/kendo-mobile/common/mixins";
+
+@itemHight: 25%;
+@historyNavSize: 20%;
+@descriptionLinesCount: 3;
+@leftMargin: 35%;
+
+
+#kindActionListHeader {
+    .flexbox();
+    .flex-direction(row);
+    .flex-justify-content(space-between);
+    .flex-align-items(center);
+    .flex-align(center);
+
+    & > div {
+        width: 25%;
+    }
+
+    .divHistoryNavigation {
+        width: 50%;
+        text-align: center;
+    }
+
+    .historyBack, .historyForward {
+        padding-top: @historyNavSize;
+        width: @historyNavSize;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    .historyBack {
+        background-image: url(../../../styles/svg/caret-left.svg);
+    }
+
+    .historyForward {
+        background-image: url(../../../styles/svg/caret-right.svg);
+    }
+
+    .historyLabel {
+        color: white;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 7%;
+    }
+}
+
+#divKindActionListBody {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 4.2%;
+    position: relative;
+
+    .kindActionListItem {
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .kindActionListItemImage {
+        width: @itemHight;
+        padding-top: @itemHight;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        border-radius: @borderRadius;
+    }
+
+    .kindActionListItemDescription {
+        top: 25%;
+        left: @leftMargin;
+        position: absolute;
+        line-height: @mediumFontSize;
+        height: @mediumFontSize * @descriptionLinesCount;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: @descriptionLinesCount;
+        -webkit-box-orient: vertical;
+    }
+
+    .kindActionListItemDate {
+        float: right;
+    }
+
+    .divHeightCarrier {
+        padding-top: @itemHight;
+    }
+
+    .thumbsUpImage {
+        background-image: url(../../../styles/svg/thumbs-up3.svg);
+    }
+
+    .thumbsDownImage {
+        background-image: url(../../../styles/svg/thumbs-down.svg);
+    }
+
+    .viewImage {
+        background-image: url(../../../styles/svg/eye-outline.svg);
+    }
+
+
+    .thumbsUpImage, .thumbsDownImage, .viewImage {
+        background-repeat: no-repeat;
+        display: inline-block;
+        float: left;
+        width: 2rem;
+        margin-top: -.5rem;
+        padding-top: 2rem;
+    }
+
+    .likesInfo {
+        display: inline-block;
+        margin-left: @leftMargin;
+
+        & + .likesInfo {
+            margin-left: 0;
+        }
+    }
+}

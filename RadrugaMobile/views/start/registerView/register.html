@@ -1,0 +1,40 @@
+<div id="vRegister"
+     data-role="view"
+     data-title="Register"
+     data-init="app.appInit.registerViewModelInit"
+     data-show="app.appInit.registerViewModelShow"
+     data-hide="app.appInit.registerViewModelHide"
+     data-layout="start-layout"
+     class="verticalViewGradient">
+
+    <div class="formContent">
+        <div data-bind="visible: showEmailInput">
+            <input type="email" data-bind="value: email" required="required" placeholder="Email" />
+            <input type="password" data-bind="value: password, attr:{placeholder:passwordRes}" required="required" id="txtPassword" />
+
+            <a data-role="button" data-bind="click: onRegister" class="greenButton">
+                <div data-bind="text:registerButtonRes"></div>
+            </a>
+            <a data-bind="click: backToEnter" data-role="button" class="link">
+                <div data-bind="text:backRes"></div>
+            </a>
+        </div>
+
+        <div data-bind="visible: showApprovalInput">
+            
+            <div data-bind="text:registerApprovalHeaderRes" class="approvalHeader"></div>
+            <h4 data-bind="text: email"></h4>
+            <div data-bind="text:registerApprovalNotifyRes"></div>
+
+            <input type="tel" pattern="[0-9]*" data-bind="value: approvalCode, attr:{placeholder:approvalCodeRes}" required="required" />
+
+            <a data-role="button" data-bind="click: onValidateCode" class="greenButton">
+                <div data-bind="text:registerButtonRes"></div>
+            </a>
+            <a data-role="button" data-bind="click: onResendCode" class="link">
+                <div data-bind="text:resendButtonRes"></div>
+            </a>
+        </div>
+
+    </div>
+</div>

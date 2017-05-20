@@ -1,0 +1,103 @@
+@import "../../styles/variables";
+@import "../../styles/kendo/kendo-mobile/common/mixins";
+@import "../../styles/mixins";
+
+@itemHeight: 30%;
+
+#headMissionChain {
+    overflow: auto;
+    background-color: @blackColor;
+
+
+    .flexbox();
+    .flex-direction(row);
+    .flex-justify-content(space-between);
+    .flex-align-items(center);
+    .flex-align(center);
+
+    & > div {
+        width: 25%;
+    }
+
+    .profileIcon {
+        background-image: url(../../styles/svg/profileWhite.svg);
+        float: left;
+        margin: 1rem;
+    }
+
+    .refreshIcon {
+        background-image: url(../../styles/svg/refresh7.svg);
+        float: right;
+        margin: 1rem;
+    }
+}
+
+#divMissionChainBody {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 1rem;
+
+    .missionTitle {
+        font-size: 1.2rem;
+    }
+
+    .missionChainItem {
+        position: relative;
+        margin: .5rem 0;
+    }
+
+    .missionChainItemImage {       
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top:0;left:0;bottom:0;right:0;
+    }
+
+    .missionChainItemImageOuter{
+        background-image:url(../../styles/svg/missionChainFrame.svg);
+    }
+
+    .missionChainItemImageInner{
+        top:1px;left:1px;bottom:1px;right:1px;
+    }
+
+       
+    .missionDifficulty{
+        margin:.3rem .5rem 0 0;
+    }
+
+    .missionChainItemDescription {
+        top: 25%;
+        left: 35%;
+        position: absolute;
+    }
+
+    .star{
+        height:12px;//pixels to prevent rounding errors
+        width:12px;
+        position: relative;
+    }
+
+    .statusContainer{
+        position:absolute;
+        right:10%;
+        top:50%;
+        width: 2rem;
+        padding-top: 2rem;
+    }
+
+    .missionChainImageContainer{
+        width: @itemHeight;
+        padding-top: @itemHeight;
+        position:relative;
+    }
+
+    .horizontalLine{
+        position:absolute;
+        right:0;
+        width:70%;
+        bottom:-.3rem;
+    }
+}

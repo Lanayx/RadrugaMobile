@@ -1,0 +1,51 @@
+#divKindActionReadBody {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+#divKindActionReadBody .imgPhoto {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+#divKindActionReadBody .imgPhotoOuter {
+  position: relative;
+  width: 50%;
+  margin: 1.5rem auto;
+}
+#divKindActionReadBody .photoIcon {
+  margin-top: 1.5rem;
+}
+#divKindActionReadBody .greenButton,
+#divKindActionReadBody .redButton {
+  display: inline-block;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  margin: 2rem .1rem;
+}
+#divKindActionReadBody .buttonText {
+  height: 2rem;
+  line-height: 2rem;
+}
+#divKindActionReadBody .spanLike,
+#divKindActionReadBody .spanDislike {
+  display: inline-block;
+  background-repeat: no-repeat;
+  float: left;
+  width: 2rem;
+  padding-top: 2rem;
+}
+#divKindActionReadBody .spanLike {
+  background-image: url(../../../styles/svg/thumbs-up3.svg);
+}
+#divKindActionReadBody .spanDislike {
+  background-image: url(../../../styles/svg/thumbs-down.svg);
+}
+#divKindActionReadResultBody .kindActionReadCompletedTitle {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+#divKindActionReadResultBody .orangeButton {
+  display: block;
+  margin-top: 30%;
+}

@@ -1,0 +1,38 @@
+#rightAnswerBody {
+  text-align: center;
+}
+#rightAnswerBody .greenButton {
+  display: block;
+  margin: .5rem 0;
+}
+#rightAnswerBody .triesLeftInfo {
+  margin: 2rem 0 1rem;
+}
+#rightAnswerBody .answerInput {
+  margin: 2rem 0;
+}
+#rightAnswerBody .answerListInput {
+  height: 2.5rem;
+  margin-left: .5rem;
+  margin-bottom: 0.5rem;
+  width: 90%;
+}
+#rightAnswerBody .answerListInput[data-index='0'] {
+  margin-top: 0.6rem;
+}
+#rightAnswerBody .answersList {
+  text-align: left;
+  margin-top: 1rem;
+  max-height: 10.4rem;
+  border: 2px dashed #30323a;
+  border-radius: 0.3rem;
+}
+#rightAnswerBody .answersList li {
+  line-height: 2.8rem;
+}
+#rightAnswerBody .valid {
+  background-color: #89e2bb;
+}
+#rightAnswerBody .invalid {
+  background-color: #ffc1b5;
+}

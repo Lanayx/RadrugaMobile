@@ -1,0 +1,45 @@
+@import "../../../styles/kendo/kendo-mobile/common/mixins";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+
+#perpetumMobileBody{
+
+     text-align:center;
+
+     .timeInfo {
+        margin: 2rem 0 1rem;
+     }
+
+     @markSize:14%;
+     .indicatorMark {
+         float:left;
+         margin:.5rem;
+         width: @markSize;
+         padding-top: @markSize;
+         border-radius:50%;
+         border-width:.5rem;
+         border-color:@lightRedColor;
+         border-style:solid;
+         display: inline-block;
+          /* Prevent background color leak outs */
+        .background-clip(padding-box)
+     }
+
+     .moving{
+         background-color:@greenColor;
+     }
+
+     .staying{
+         background-color:@redColor;
+     }
+
+     .triesInfo{
+         clear:both;
+     }
+
+     .greenButton {
+        display: block;
+        margin-top: 2rem;
+    }
+}

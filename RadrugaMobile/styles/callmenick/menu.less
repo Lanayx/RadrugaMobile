@@ -1,0 +1,81 @@
+@import "../variables";
+/**
+ * Menu overview.
+ */
+
+.c-menu {
+  position: absolute;
+  z-index: 3;
+  transition: transform 0.3s;
+}
+
+/**
+ * Top and bottom menus
+ *
+ * Slide and push menus coming in from the top and bottom inherit a lot of
+ * common styles. We'll start each of them off by doing up the common styles
+ * for each version, followed by individual styles.
+ *
+ * The various versions are governed by modifier classes.
+/**
+ * Common modifiers for top/bottom menus
+ */
+
+.c-menu--slide-top {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow:hidden;
+}
+
+/**
+ * Slide/Push Menu Top.
+ */
+
+.c-menu--slide-top{
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.c-menu--slide-top.is-active{
+  transform: translateY(0);
+}
+
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/* -----------------------------------------------------------------------------
+  MASK COMPONENT
+  
+----------------------------------------------------------------------------- */
+
+.c-mask {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}

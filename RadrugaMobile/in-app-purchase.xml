@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CurrentApp>
+  <ListingInformation>
+    <App>
+      <AppId>988b90e4-5d4d-4dea-99d0-e423e414ffbc</AppId>
+      <LinkUri>http://apps.microsoft.com/webpdp/app/988b90e4-5d4d-4dea-99d0-e423e414ffbc</LinkUri>
+      <CurrentMarket>en-us</CurrentMarket>
+      <AgeRating>3</AgeRating>
+      <MarketData xml:lang="en-us">
+        <Name>RadrugaApp</Name>
+        <Description>RadrugaApp</Description>
+        <Price>1</Price>
+        <CurrencySymbol>$</CurrencySymbol>
+        <CurrencyCode>USD</CurrencyCode>
+      </MarketData>
+    </App>
+    <Product ProductId="coins_pack_5" ProductType="Consumable">
+      <MarketData xml:lang="en-us">
+        <Name>Coins pack 5</Name>
+        <Price>0.99</Price>
+        <CurrencySymbol>$</CurrencySymbol>
+        <CurrencyCode>USD</CurrencyCode>
+      </MarketData>
+    </Product>
+  </ListingInformation>
+  <LicenseInformation>
+    <App>
+      <IsActive>true</IsActive>
+      <IsTrial>false</IsTrial>
+    </App>
+  </LicenseInformation>
+</CurrentApp>

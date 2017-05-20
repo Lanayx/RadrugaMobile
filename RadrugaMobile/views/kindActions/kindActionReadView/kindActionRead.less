@@ -1,0 +1,63 @@
+@import "../../../styles/variables";
+
+#divKindActionReadBody {
+    margin-top: 1.5rem;
+    text-align: center;
+
+    .imgPhoto {
+        width: 100%;
+        border-radius: @borderRadius;
+    }
+
+    .imgPhotoOuter {
+        position: relative;
+        width: 50%;
+        margin: 1.5rem auto;
+    }
+
+    .photoIcon {
+        margin-top: 1.5rem;
+    }
+
+    .greenButton, .redButton {
+        display: inline-block;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 0.2rem;
+        padding-right:0.5rem;
+        margin: 2rem .1rem;
+    }
+
+    .buttonText {
+        height: 2rem;
+        line-height: 2rem;
+    }
+
+    .spanLike, .spanDislike {
+        display: inline-block;
+        background-repeat: no-repeat;
+        float: left;
+        width: 2rem;
+        padding-top: 2rem;
+    }
+
+    .spanLike {
+        background-image: url(../../../styles/svg/thumbs-up3.svg);
+    }
+
+    .spanDislike {
+        background-image: url(../../../styles/svg/thumbs-down.svg);
+    }
+}
+
+#divKindActionReadResultBody {
+    .kindActionReadCompletedTitle {
+        font-size: @mediumFontSize;
+        margin: 2rem 0;
+    }
+
+    .orangeButton {
+        display: block;
+        margin-top: 30%;
+    }
+}

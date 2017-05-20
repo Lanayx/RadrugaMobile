@@ -1,0 +1,37 @@
+.flex-justify-content(@justifyStyle) {
+    .old-flex-justify-content(@justifyStyle);
+    -ms-justify-content: @justifyStyle;
+    -moz-justify-content: @justifyStyle;	
+    -webkit-justify-content: @justifyStyle;
+    justify-content: @justifyStyle;
+}
+
+//These are the conditional mixins for the different syntax for IE10 Flexbox
+.old-flex-justify-content(@msJustify) when (@msJustify = space-between) {    
+    -moz-box-pack: justify;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+
+.old-flex-justify-content(@msJustify) when (@msJustify = space-around) {
+    -ms-flex-pack: distribute;
+    //no analog for old android, so don't use it
+}
+
+.old-flex-justify-content(@msJustify) when (@msJustify = flex-end) {
+    -moz-box-pack: end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+}
+
+.old-flex-justify-content(@msJustify) when (@msJustify = flex-start) {
+    -moz-box-pack: start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+}
+
+.old-flex-justify-content(@msJustify) when (@msJustify = center) {
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}

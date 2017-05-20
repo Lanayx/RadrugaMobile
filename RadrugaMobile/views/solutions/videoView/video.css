@@ -1,0 +1,17 @@
+#videoBody {
+  text-align: center;
+}
+#videoBody .greenButton {
+  display: block;
+  margin: .5rem 0;
+}
+#videoBody .additionalInfo {
+  margin: 2rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+#videoBody .answerInput {
+  padding-left: 1rem;
+  margin-top: 2rem;
+}

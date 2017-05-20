@@ -1,0 +1,23 @@
+{
+  "CorePlugins": [
+    "cordova-plugin-battery-status",
+    "cordova-plugin-camera",
+    "cordova-plugin-device",
+    "cordova-plugin-device-motion",
+    "cordova-plugin-device-orientation",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-file",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-globalization",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-vibration",
+    "cordova-plugin-whitelist",
+    "net.yoik.cordova.plugins.screenorientation@1.4.0",
+    "nl.x-services.plugins.insomnia@4.0.1",
+    "uk.co.whiteoctober.cordova.appversion@0.1.7"
+  ]
+}

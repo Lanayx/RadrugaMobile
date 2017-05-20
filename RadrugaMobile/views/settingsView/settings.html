@@ -1,0 +1,46 @@
+<div id="vSettings"
+     data-role="view"
+     data-title="Settings"
+     data-init="app.appInit.settingsViewModelInit"
+     data-show="app.appInit.settingsViewModelShow"
+     data-hide="app.appInit.settingsViewModelHide"
+     class="horizontalViewGradient">
+
+
+    <header id="headSettings">
+        <div></div>
+        <div id="divSettingsPhotoOuter">
+            <div id="divSettingsPhoto" data-bind="style: { backgroundImage: photoPath}"></div>
+            <span id="spEditPhoto" class="smallIcon editIcon" data-bind="click: photoChange"></span>
+        </div>
+
+        <div>
+            <a class="mediumIcon profileIcon" data-bind="click: navigateToProfile"></a>
+        </div>
+    </header>
+    <div id="divSettings">
+        <div>
+            <label class="cleanLabel" for="divSettingsNickNameEdit" data-bind="text: nickNameRes"></label><input
+               type="text" id="divSettingsNickNameEdit" data-bind="value: nickName, disabled: txtNickNameDisabled, events:{ change: nicknameChanged }" class="cleanInput" />
+        </div>
+        <div>
+            <a data-bind="click: addVkProfile, text:attachVkRes, visible: vkNotAttached" class="btnFlat"></a>
+            <a data-bind="click: addEmail, text:attachEmailRes, visible: emailNotAttached" class="btnFlat btnWithArrow"></a>
+        </div>
+        <div>
+            <label class="cleanLabel lastCleanLabel" for="chkNotifications" data-bind="text: notificationsRes"></label><span id="spanNotificationsContainer">
+                <input id="chkNotifications" data-role="switch" data-bind="checked:notificationsEnabled, events: { change: notificationsChange }" />
+            </span>
+        </div>
+        <br />
+        <div class="btnContainer">
+            <a data-bind="click: leaveMessage, text:messageForDevRes" class="btnFlat btnWithArrow"></a>
+            <a data-bind="click: showAbout, text:aboutRes" class="btnFlat btnWithArrow"></a>
+        </div>
+        <br />
+        <div>
+            <a data-bind="click: logout, text:logoutRes" class="btnFlat" style="text-align: center"></a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,43 @@
+#pathBody {
+  text-align: center;
+}
+#pathBody .timeInfo {
+  margin: 6%;
+}
+#pathBody .greenButton {
+  display: block;
+}
+#pathBody .pointsList {
+  margin-top: 1rem;
+  max-height: 12.9rem;
+  border: 2px dashed #30323a;
+  border-radius: 0.3rem;
+}
+#pathBody .pointMark {
+  float: left;
+  margin: 0.4rem;
+  width: 2.5rem;
+  padding-top: 2.5rem;
+  border-radius: 50%;
+  border-width: 0.5rem;
+  border-color: #FFCDA0;
+  border-style: solid;
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+}
+#pathBody .pointContainer {
+  line-height: inherit;
+  overflow: hidden;
+}
+#pathBody .pointName {
+  padding-top: 1.25rem;
+}
+#pathBody .reached {
+  background-color: #ff9782;
+}
+#pathBody .unreached {
+  background-color: #F9FFBF;
+}
+#pathBody .current {
+  background-color: rgba(0, 0, 0, 0.12);
+}

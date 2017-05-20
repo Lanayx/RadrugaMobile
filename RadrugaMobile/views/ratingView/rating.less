@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+
+#headRating {
+    .divCounters, .divTabs{
+        overflow:hidden;
+        display:inline-block;
+    }
+
+    .divCounters{        
+       text-align:center;
+       margin-left:1rem;
+       color:rgba(255,255,255,.6);
+    }
+
+   .divRatingInfoContainer{
+       display:inline-block;
+       margin:.5rem;
+   }
+
+   .ratingInfo{
+       font-size:1.3rem;
+       line-height:.7rem;
+   }
+   .ratingInfoRes{
+       font-size:.8rem;
+   }
+
+   .km-button{
+       margin:.1rem;
+       padding:0;
+   }
+
+   .ratingTab{
+       padding:.2rem .5rem;
+       margin:0;
+       color:white;
+   }
+}
+
+#divRatingBody {
+    width:90%;
+    margin:1rem auto 0;
+
+    .km-list > li{
+        display:table;
+        width:100%;
+        table-layout:fixed;
+        margin:.5rem 0;
+    }
+
+    .horizontalLine{
+        margin:1rem -5%;
+    }
+
+    .playerRatingItem{
+        display:table-row;
+    }
+
+   .playerPlace{  
+       vertical-align:middle;
+       display:table-cell;    
+       width:15%;
+       font-size:@bigFontSize;
+       color:@redColor;
+   }
+
+   .playerAvatarOuter{
+       display:table-cell;
+       width:20%;
+       border-radius:50%;
+       border: .2rem solid white;
+   }
+
+   .playerAvatar{
+       width:100%;
+       padding-bottom:100%;
+       border-radius:50%;       
+       background-size:cover; 
+       background-position: 50% 50%;
+       background-repeat: no-repeat;
+   }   
+
+   .playerRatingDescription{
+       padding: 0 1rem;
+       display:table-cell;
+       width:65%;
+       vertical-align:middle;
+   }
+   .playerNickName{
+       width:100%;
+       max-width:100%;
+       font-weight:bold;
+       color:@blackColor;
+       white-space:nowrap;
+       text-overflow:ellipsis;
+       overflow:hidden;
+   }
+   .playerPointsCount{
+       color:gray;
+       margin-top:.2rem;
+   }
+}

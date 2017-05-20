@@ -1,0 +1,49 @@
+@import "../../../styles/kendo/kendo-mobile/common/mixins";
+
+#vEnter {
+
+    .formContent {
+        position: relative;
+        padding-top: 100%;
+    }
+
+    .km-button {
+        padding-left: 2.9rem;
+        display: block;
+        width: 100%;
+        .box-sizing(border-box);
+        position: absolute;
+    }
+
+
+    @vkButtonTop: 10%;
+    @emailButtonTop:40%;
+
+    .blueButton {
+        top:  @vkButtonTop;
+    }
+
+    .orangeButton {
+        top: @emailButtonTop;
+    }
+
+    .spanIcon {
+        left:.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        position: absolute;
+        padding-top:1rem;
+        background-repeat:no-repeat;
+        background-position:50% 50%;
+    }
+
+    .spanVkButton {
+        top:  @vkButtonTop;
+        background-image: url("../../../styles/svg/vk.svg");
+    }
+
+    .spanEmailButton {
+        top: @emailButtonTop;
+        background-image: url("../../../styles/svg/email.svg");
+    }
+}

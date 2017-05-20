@@ -1,0 +1,199 @@
+@import "../../styles/kendo/kendo-mobile/common/mixins";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+@headerPad: -2.2rem;
+
+#headProfileRead {
+    @gradientValue: @blackColor, @blackColor;
+    background-image: linear-gradient(@gradientValue);
+    background-repeat: no-repeat;
+    background-position-y: @headerPad;
+    .flexbox();
+    .flex-justify-content(space-between);
+
+    & > div {
+        .flex(1);
+    }
+
+    .figPhoto {
+        text-align: center;
+        margin: 2.5rem auto 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .divProfileReadPhoto {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        padding-bottom: 80%;
+        border-radius: 50%;
+        border: solid .5rem #fffcf6;
+        margin: auto;
+    }
+
+    .divHeadColumn {
+        position: relative;
+        font-size: @mediumFontSize;
+        white-space: nowrap;
+    }
+
+    .divCityInfo, .divCountryInfo, .divRatingInfo {
+        position: absolute;
+        right: 1rem;
+    }
+
+    .divCityInfo {
+        top: 1rem;
+    }
+
+    .divCountryInfo {
+        top: 1.2rem + @mediumFontSize;
+    }
+
+    .divRatingInfo {
+        bottom: -@headerPad;
+    }
+
+    .divPoints {
+        position: absolute;
+        left: 1rem;
+        bottom: -@headerPad;
+    }
+
+    .mediumIcon{
+        margin: 1rem;
+    }
+}
+
+#divProfileReadBody {
+    .divScale {
+        margin: .5rem 0;
+    }
+
+    .divName {
+        font: bold 1.5rem arial;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .levelPoints {
+        float: right;
+    }
+
+    .horizontalLine {
+        position: absolute;
+        z-index: -2;
+        width: 123.5%;
+        left: 0;
+        top: 40%;
+        margin-left: -12%;
+    }
+
+    .iconMissionPassed, .iconMissionFailed, .iconAchievement, .iconKindAction, .iconKindActionMark {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        width: 1rem;
+        padding-top: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .iconMissionPassed {
+        background-image: url(../../styles/svg/checkmark2.svg);
+    }
+
+    .iconMissionFailed {
+        background-image: url(../../styles/svg/circle-cross.svg);
+    }
+
+    .iconAchievement {
+        background-image: url(../../styles/svg/stars-black.svg);
+    }
+
+    .iconKindAction{
+        background-image: url(../../styles/svg/plus-black.svg);
+        width:.8rem;
+        padding-top:.8rem;
+    }
+
+    .iconKindActionMark{
+        background-image: url(../../styles/svg/eye-outline.svg);
+    }
+
+    .infoText {
+        color: black;
+        vertical-align: middle;
+    }
+    
+    .redButton{
+        padding: .5rem 0;
+        margin: .5rem 0;
+    }
+
+    .missionButton, .achievementsButton {   
+        width: 45%;
+    }
+
+    .misssionButton {
+        float: left;
+    }
+
+    .achievementsButton {
+        float: right;
+    }
+
+    @kindActionButtonPadding:11%;
+    .kindActionsButton{
+        padding-left:@kindActionButtonPadding;
+        text-align:initial;
+        width:100% - @kindActionButtonPadding;
+    }
+
+    .spanArrowRight{
+        background-image:url(../../styles/svg/nextArrowWhite.svg);
+        background-repeat:no-repeat;
+        position:absolute;
+        padding-top:2rem;
+        width:2rem;
+        right: 10%;
+        top:1rem;
+    }
+
+
+    #prLevelRead {
+        background-color: #ffe9cc;
+        color: @orangeColor;
+    }
+
+    #prLevelRead::-webkit-progress-bar {
+        background-color: #ffe9cc;
+    }
+
+    #prLevelRead::-webkit-progress-value {
+        background-color: @orangeColor;
+    }
+
+    #prLevelRead::-moz-progress-bar {
+        background-color: @orangeColor;
+    }
+
+    #prKindScaleRead {
+        background-color: #c9edd4;
+        color: @greenColor;
+    }
+
+    #prKindScaleRead::-webkit-progress-bar {
+        background-color: #c9edd4;
+    }
+
+    #prKindScaleRead::-webkit-progress-value {
+        background-color: @greenColor;
+    }
+
+    #prKindScaleRead::-moz-progress-bar {
+        background-color: @greenColor;
+    }
+}

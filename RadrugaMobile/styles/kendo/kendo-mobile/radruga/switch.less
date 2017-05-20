@@ -1,0 +1,85 @@
+@import "../common/switch.less";
+@import "../../../variables";
+@import "../common/mixins";
+
+@switchHeight:2.0rem;
+/* Switch */
+.km-app .km-switch {
+    width: 3.8rem;
+    height: @switchHeight;
+    overflow:visible;
+}
+
+.km-app .km-switch-wrapper {
+    overflow: hidden;
+    background-color: #bababa;    
+    width:100%;
+}
+
+.km-app .km-switch-background,
+.km-app .k-slider-selection {
+    background-position: 4.25rem 0;
+    background-repeat: no-repeat;
+    background-color: @greenColor;
+    margin-left: -3.4rem;
+}
+
+.km-app .km-switch-container {
+    overflow: visible;
+    border-width: 0;
+    padding: 0;    
+}
+
+.km-app .km-switch-handle {
+    width: @switchHeight - .1rem;
+    .transition(width .2s linear);
+    background: #fcfcfe;
+    margin: 0 3px 0 0;
+}
+
+.km-app .km-switch-handle.km-state-active {
+    width: @switchHeight + .3rem;
+}
+
+.km-app .km-switch-label-on,
+.km-app .km-switch-label-off {
+    display: none;
+}
+
+.km-app .km-switch-handle,
+.km-app .km-switch-wrapper,
+.km-app .km-switch-container,
+.km-app .km-switch-background {
+    border-radius: 3rem;
+}
+
+.km-app .km-switch-container,
+.km-app .km-switch-wrapper {
+    .box-sizing(border-box);
+    border-width: 1px;
+    border-style: solid;
+    background-clip: content-box;
+    border-color: #efeff4;
+}
+
+.km-app .km-switch-on .km-switch-container {
+    border-color: #46c88f;
+}
+
+.km-app .km-switch-off .km-switch-container,
+.km-app .km-switch-off .km-switch-handle {
+    border-color: #c8c9cb;
+}
+.km-app .km-switch-off .km-switch-background {
+    background-position: 0 0;
+}
+
+//
+
+@offBackgroundColor: #dddee1;
+
+.km-app .km-switch-background {
+    background-image: linear-gradient(to bottom,@offBackgroundColor,@offBackgroundColor);
+    margin-left:0 !important;
+    width:100%;
+}

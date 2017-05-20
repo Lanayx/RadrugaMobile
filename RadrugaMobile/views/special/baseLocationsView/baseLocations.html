@@ -1,0 +1,20 @@
+<div id="vBaseLocations"
+     data-role="view"
+     data-title="BaseLocations"
+     data-init="app.appInit.baseLocationsViewModelInit"
+     data-show="app.appInit.baseLocationsViewModelShow"
+     data-hide="app.appInit.baseLocationsViewModelHide"
+     data-layout="close-layout"
+     class="horizontalViewGradient">
+
+    <div id="divBaseLocationsBody" class="formContent">
+        <ul data-role="listview"
+            data-bind="source: baseLocationsDataSource"
+            data-template="base-location-template"></ul>
+    </div>
+</div>
+
+<script id="base-location-template" type="text/x-kendo-template">
+    <div class="baseLocationDescription">${description}</div>
+    <div>${coordinate}</div>
+</script>

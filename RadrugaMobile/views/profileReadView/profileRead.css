@@ -1,0 +1,172 @@
+#headProfileRead {
+  background-image: -webkit-linear-gradient(#30323a, #30323a);
+  background-image: linear-gradient(#30323a, #30323a);
+  background-repeat: no-repeat;
+  background-position-y: -2.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+#headProfileRead > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#headProfileRead .figPhoto {
+  text-align: center;
+  margin: 2.5rem auto 0;
+  width: 50%;
+  height: 100%;
+}
+#headProfileRead .divProfileReadPhoto {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  padding-bottom: 80%;
+  border-radius: 50%;
+  border: solid .5rem #fffcf6;
+  margin: auto;
+}
+#headProfileRead .divHeadColumn {
+  position: relative;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+#headProfileRead .divCityInfo,
+#headProfileRead .divCountryInfo,
+#headProfileRead .divRatingInfo {
+  position: absolute;
+  right: 1rem;
+}
+#headProfileRead .divCityInfo {
+  top: 1rem;
+}
+#headProfileRead .divCountryInfo {
+  top: 2.4rem;
+}
+#headProfileRead .divRatingInfo {
+  bottom: 2.2rem;
+}
+#headProfileRead .divPoints {
+  position: absolute;
+  left: 1rem;
+  bottom: 2.2rem;
+}
+#headProfileRead .mediumIcon {
+  margin: 1rem;
+}
+#divProfileReadBody .divScale {
+  margin: .5rem 0;
+}
+#divProfileReadBody .divName {
+  font: bold 1.5rem arial;
+  white-space: nowrap;
+  text-align: center;
+}
+#divProfileReadBody .levelPoints {
+  float: right;
+}
+#divProfileReadBody .horizontalLine {
+  position: absolute;
+  z-index: -2;
+  width: 123.5%;
+  left: 0;
+  top: 40%;
+  margin-left: -12%;
+}
+#divProfileReadBody .iconMissionPassed,
+#divProfileReadBody .iconMissionFailed,
+#divProfileReadBody .iconAchievement,
+#divProfileReadBody .iconKindAction,
+#divProfileReadBody .iconKindActionMark {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 1rem;
+  padding-top: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+#divProfileReadBody .iconMissionPassed {
+  background-image: url(../../styles/svg/checkmark2.svg);
+}
+#divProfileReadBody .iconMissionFailed {
+  background-image: url(../../styles/svg/circle-cross.svg);
+}
+#divProfileReadBody .iconAchievement {
+  background-image: url(../../styles/svg/stars-black.svg);
+}
+#divProfileReadBody .iconKindAction {
+  background-image: url(../../styles/svg/plus-black.svg);
+  width: .8rem;
+  padding-top: .8rem;
+}
+#divProfileReadBody .iconKindActionMark {
+  background-image: url(../../styles/svg/eye-outline.svg);
+}
+#divProfileReadBody .infoText {
+  color: black;
+  vertical-align: middle;
+}
+#divProfileReadBody .redButton {
+  padding: .5rem 0;
+  margin: .5rem 0;
+}
+#divProfileReadBody .missionButton,
+#divProfileReadBody .achievementsButton {
+  width: 45%;
+}
+#divProfileReadBody .misssionButton {
+  float: left;
+}
+#divProfileReadBody .achievementsButton {
+  float: right;
+}
+#divProfileReadBody .kindActionsButton {
+  padding-left: 11%;
+  text-align: initial;
+  width: 89%;
+}
+#divProfileReadBody .spanArrowRight {
+  background-image: url(../../styles/svg/nextArrowWhite.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  padding-top: 2rem;
+  width: 2rem;
+  right: 10%;
+  top: 1rem;
+}
+#divProfileReadBody #prLevelRead {
+  background-color: #ffe9cc;
+  color: #ffc175;
+}
+#divProfileReadBody #prLevelRead::-webkit-progress-bar {
+  background-color: #ffe9cc;
+}
+#divProfileReadBody #prLevelRead::-webkit-progress-value {
+  background-color: #ffc175;
+}
+#divProfileReadBody #prLevelRead::-moz-progress-bar {
+  background-color: #ffc175;
+}
+#divProfileReadBody #prKindScaleRead {
+  background-color: #c9edd4;
+  color: #4cd398;
+}
+#divProfileReadBody #prKindScaleRead::-webkit-progress-bar {
+  background-color: #c9edd4;
+}
+#divProfileReadBody #prKindScaleRead::-webkit-progress-value {
+  background-color: #4cd398;
+}
+#divProfileReadBody #prKindScaleRead::-moz-progress-bar {
+  background-color: #4cd398;
+}

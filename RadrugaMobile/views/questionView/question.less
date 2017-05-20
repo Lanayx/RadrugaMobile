@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+@import "../../styles/kendo/kendo-mobile/common/mixins";
+
+.questionHeader{
+    .flexbox();
+    .flex-direction(row);
+    .flex-justify-content(space-between);
+    .flex-align-items(center);
+    .flex-align(center);
+
+    & > div {
+        width: 25%;
+    }
+
+
+    .questionNumber{
+        text-align:center;
+        color:white;
+        font-size:1.6rem;
+        vertical-align:middle;
+        width: 50%;
+    }
+}
+
+
+#divQuestonAnswers{
+    margin-top:10%;
+}
+
+#divQuestionBody {
+    margin-top: 1.5rem;
+    text-align: center;
+
+    .orangeButton {        
+        display: block;
+        margin-top: 10%;
+    }
+
+}
+

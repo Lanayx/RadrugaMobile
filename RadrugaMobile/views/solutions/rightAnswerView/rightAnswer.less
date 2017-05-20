@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+
+
+#rightAnswerBody{
+    text-align:center;
+
+    .greenButton{
+        display:block;
+        margin:.5rem 0;
+    }
+
+    .triesLeftInfo{
+        margin:2rem 0 1rem;
+    }
+
+    .answerInput{
+        margin:2rem 0;
+    }
+
+    @inputSize: 2.5rem;
+    @inputMargin: .5rem;
+    @lineHeight:@inputSize+ .3rem;
+
+    .answerListInput{
+        height:@inputSize;
+        margin-left:.5rem;
+        margin-bottom:@inputMargin;
+        width:90%;//hotfix
+
+        &[data-index='0']{
+            margin-top:@inputMargin + .1rem;
+        }
+    }
+
+    .answersList{
+        text-align:left;
+        margin-top:1rem;
+        max-height: (@lineHeight + @inputMargin) * 3 + @inputMargin;
+        border: 2px dashed @blackColor;
+        border-radius: @borderRadius;
+
+        & li{
+            line-height:@lineHeight;
+        }
+    }   
+
+    .valid{
+        background-color: lighten(@greenColor,15%);
+    }
+
+    .invalid{
+        background-color:lighten(@redColor,10%);
+    }
+}
+
+

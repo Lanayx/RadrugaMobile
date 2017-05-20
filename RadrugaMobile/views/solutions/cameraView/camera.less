@@ -1,0 +1,47 @@
+@photoSize: 7rem;
+
+#cameraBody {
+    text-align: center;
+
+    .addPhotoBtn{
+        background-image:url(../../../styles/svg/addPhoto.svg);
+    }
+
+    .greenButton {
+        display: block;
+        margin: 2rem 0 1rem;
+    }
+
+    .photoContainer {
+        position: relative;
+    }
+
+    .photoTaken {
+        border-radius: .5rem;
+        height: @photoSize;
+        width: @photoSize;
+        background-size: cover;
+    }
+
+    .photoIcon{
+        margin-top:2rem;
+    }
+
+    .photoList {
+        li {
+            display: inline-block;
+            margin-top:1rem;
+            &:nth-child(2n){
+                margin-left:1.2rem;
+            }
+            overflow:visible;
+
+        }
+
+        text-align: center;
+    }
+
+    .km-listview-wrapper{
+        display:inline-block;
+    }
+}

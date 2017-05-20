@@ -1,0 +1,49 @@
+<div id="vKindActionList"
+     data-role="view"
+     data-title="KindActionList"
+     data-init="app.appInit.kindActionListViewModelInit"
+     data-show="app.appInit.kindActionListViewModelShow"
+     data-hide="app.appInit.kindActionListViewModelHide"
+     data-layout="empty-layout"
+     class="horizontalViewGradient">
+
+    <header id="kindActionListHeader" class="headCommon" data-role="header">
+        <div></div>
+        <div class="divHistoryNavigation">
+            <span class="historyBack" data-bind="style: {visibility: historyBackVisible}, click: historyBack"></span>
+            <div class="historyLabel" data-bind="text: resKindActionHistory"></div>
+            <span class="historyForward" data-bind="style: {visibility: historyForwardVisible}, click: historyForward"></span>
+        </div>
+        <div>
+            <a class="mediumIcon closeIcon" data-bind="click: closeList"></a>
+        </div>
+    </header>
+    <div id="divKindActionListBody">
+        <ul data-role="listview"
+            data-bind="source: kindActionListDataSource"
+            data-template="kindActionList-template"></ul>
+    </div>
+</div>
+
+<script id="kindActionList-template" type="text/x-kendo-template">
+    <div class="kindActionListItem" data-bind="click: kindActionChosen" data-action-id="${Id}">
+        <div class="kindActionListItemImage" data-bind="style: { backgroundImage: ImageUrl }"></div>
+        <div class="kindActionListItemDescription">${Description}</div>
+        <div class="kindActionListItemDate">${DateAdded}</div>
+        <div class="kindActionListItemLikes" data-bind="visible:AlreadyLiked">
+            <span class="likesInfo">
+                <span class="thumbsUpImage" />${LikesCount}
+            </span>
+            <span class="likesInfo">
+                <span class="thumbsDownImage" />${DislikesCount}
+            </span>
+        </div>
+        <div class="kindActionListItemViews" data-bind="invisible:AlreadyLiked">
+            <span class="likesInfo">
+                <span class="viewImage" />${ViewsCount}
+            </span>
+        </div>
+        <div class="divHeightCarrier"></div>
+    </div>
+</script>
+

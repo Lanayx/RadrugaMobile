@@ -1,0 +1,14 @@
+#vAddEmail h4 {
+  margin: .5rem 0;
+}
+#vAddEmail input,
+#vAddEmail .addEmailHeader {
+  margin-top: 1.2rem;
+}
+#vAddEmail .km-button {
+  margin-top: 1.2em;
+  display: block;
+}
+#divAddEmailBody {
+  margin-top: 1.5rem;
+}

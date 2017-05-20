@@ -1,0 +1,34 @@
+<div id="vKindActionNew"
+     data-role="view"
+     data-title="KindActionNew"
+     data-init="app.appInit.kindActionNewViewModelInit"
+     data-show="app.appInit.kindActionNewViewModelShow"
+     data-hide="app.appInit.kindActionNewViewModelHide"
+     data-layout="close-layout"
+     class="verticalViewGradient">
+
+    <div id="divKindActionNewBody" class="formContent" data-bind="invisible:kindActionNewSubmitted">
+        <textarea data-bind='value: kindActionNewDescription,disabled: kindActionNewDescriptionDisabled, attr:{placeholder: kindActionNewDescriptionRes}' rows="5"></textarea>
+
+        <div data-bind="visible:photoTaken" class="imgPhotoOuter">
+            <img class="imgPhoto" alt="photo" data-bind="attr: { src: photoPath }" />
+            <span class="removePhotoIcon" data-bind="click:removePhoto"></span>
+        </div>
+        <a data-role="button" data-bind='click:takePicture, invisible:photoTaken' class="bigIcon photoIcon"></a>
+
+        <a data-role="button" data-bind='click:submitKindActionNew' class="greenButton">
+            <div data-bind="text:btnCompleteRes"></div>
+        </a>
+    </div>
+
+    <div id="divKindActionNewResultBody" class="formContent" data-bind="visible:kindActionNewSubmitted">
+        <div class="kindActionNewCompletedTitle" data-bind="text:kindActionNewCompletedRes"></div>
+        <div>
+            <div data-bind="text:kindScaleGained"></div>
+            <div data-bind="text:coinsGained"></div>
+        </div>
+        <a data-role="button" data-bind='click:submitAnotherKindActionNew' class="orangeButton">
+            <div data-bind="text:btnAnotherKindActionNewRes"></div>
+        </a>
+    </div>
+</div>

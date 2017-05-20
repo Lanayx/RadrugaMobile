@@ -1,0 +1,201 @@
+@import "../../styles/kendo/kendo-mobile/common/mixins";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+#headProfile {
+    @gradientValue: @blackColor, @blackColor;
+    background: linear-gradient(@gradientValue);
+    background-repeat: no-repeat;
+    background-position-y: -2.2rem;
+    .flexbox();
+    .flex-justify-content(space-between);
+
+    & > div {
+        .flex(1);
+    }
+
+    .figPhoto {
+        text-align: center;
+        margin: 2.5rem auto 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .divProfilePhoto {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        padding-bottom: 80%;
+        border-radius: 50%;
+        border: solid .5rem #fffcf6;
+        margin: auto;
+    }
+}
+
+#divProfileBody {
+    .divName {
+        font: bold 1.5rem arial;
+        margin-bottom: .5rem;
+        white-space:nowrap;
+        text-align:center;  
+    }
+
+    .plusIcon {
+        float: right;
+        background-image: url(../../styles/svg/plus.svg);
+    }
+
+    .badge {
+        width: 75%;
+        padding-bottom: 75%;
+        position: relative;
+        margin: 0 auto .5rem;
+        background-repeat: no-repeat;
+    }
+
+    .badge:after {
+        content: '';
+        background-image: url(../../styles/svg/polygonBackground.svg);
+        position: absolute;
+        width: 115%;
+        padding-bottom: 115%;
+        background-repeat: no-repeat;
+        z-index: -1;
+        left: -7%;
+        top: -5%;
+    }
+
+    .badgeLabel {
+        margin-right: .2rem;
+    }
+
+    .badgeAndDescription {
+        .flex(1);
+        width: 100%;
+        text-align: center;
+    }
+
+    .divQuestionMark {
+        background-image: url(../../styles/svg/question.svg);
+        position: absolute;
+        width: 75%;
+        padding-bottom: 75%;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 12%;
+        top: 12%;
+    }
+
+    .levelPoints {
+        float: right;
+    }
+
+    .svgRadrugaColor {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .horizontalLine {
+        position: absolute;
+        z-index: -2;
+        width: 123.5%;
+        left: 0;
+        top: 40%;
+        margin-left: -12%;
+    }
+
+    .divBadges {
+        .flexbox();
+        .flex-justify-content(space-between);
+        margin-top: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .achievmentsBadge {
+        background-image: url(../../styles/svg/reward.svg);
+    }
+
+    .missionsBadge {
+        background-image: url(../../styles/svg/missions.svg);
+    }
+
+    .ratingBadge {
+        background-image: url(../../styles/svg/rating.svg);
+    }
+    
+    #prLevel {
+        background-color: #ffe9cc;
+        color: @orangeColor;
+    }
+
+    #prLevel::-webkit-progress-bar {
+        background-color: #ffe9cc;
+    }
+
+    #prLevel::-webkit-progress-value {
+        background-color: @orangeColor;
+    }
+
+    #prLevel::-moz-progress-bar {
+        background-color: @orangeColor;
+    }
+
+    #prKindScale {
+        background-color: #c9edd4;
+        color: @greenColor;
+    }
+
+    #prKindScale::-webkit-progress-bar {
+        background-color: #c9edd4;
+    }
+
+    #prKindScale::-webkit-progress-value {
+        background-color: @greenColor;
+    }
+
+    #prKindScale::-moz-progress-bar {
+        background-color: @greenColor;
+    }
+}
+
+#menu {
+    .liMenuItem {
+        &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+            margin-top: @menuIconSize;
+        }
+
+        width: 33.3%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+    
+    .navContainer {
+        width: 55%;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .navLabel {
+        margin-top: .2rem;
+    }
+
+    //adnroid and wp hotfix
+    .svgMenu{
+        height:3rem;
+    }
+}
+
+#vProfile{
+    .km-content{
+        //android hotfix
+        position:absolute;
+        top:0;
+        bottom:0;
+    }
+}

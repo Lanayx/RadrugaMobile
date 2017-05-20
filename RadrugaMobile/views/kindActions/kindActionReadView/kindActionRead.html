@@ -1,0 +1,28 @@
+<div id="vKindActionRead"
+     data-role="view"
+     data-title="KindActionRead"
+     data-init="app.appInit.kindActionReadViewModelInit"
+     data-show="app.appInit.kindActionReadViewModelShow"
+     data-hide="app.appInit.kindActionReadViewModelHide"
+     data-layout="back-layout"
+     class="verticalViewGradient">
+
+    <div id="divKindActionReadBody" class="formContent">
+        <div data-bind="visible:photoTaken" class="imgPhotoOuter">
+            <img class="imgPhoto" alt="photo" data-bind="attr: { src: photoPath }" />
+        </div>
+        <div class="kindActionDescription" data-bind="text: kindActionDescription"></div>
+        <div>
+            <a data-role="button" data-bind='click:like' class="greenButton">
+                <span class="spanLike"></span>
+                <span class="buttonText" data-bind="invisible: alreadyLiked, text:likeRes"></span>
+                <span class="buttonText" data-bind="visible: alreadyLiked, text:likesCount"></span>
+            </a>
+            <a data-role="button" data-bind='click:dislike' class="redButton">
+                <span class="spanDislike"></span>
+                <span class="buttonText" data-bind="invisible: alreadyLiked, text:dislikeRes"></span>
+                <span class="buttonText" data-bind="visible: alreadyLiked, text:dislikesCount"></span>
+            </a>
+        </div>
+    </div>
+</div>

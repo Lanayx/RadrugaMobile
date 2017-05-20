@@ -1,0 +1,19 @@
+<div id="vAccount"
+     data-role="view"
+     data-title="Account"
+     data-init="app.appInit.accountViewModelInit"
+     data-show="app.appInit.accountViewModelShow"
+     data-hide="app.appInit.accountViewModelHide"
+     data-layout="close-layout"
+     class="horizontalViewGradient">
+
+    <div id="divAccountBody" class="formContent">
+        <div class="coinsCountWrapper">
+            <div class="coinsLogo"></div>
+            <div class="coinsCount" data-bind="text: coinsCount"></div>
+        </div>
+        <div data-bind="text: coinsDescription"></div>
+    </div>
+</div>
+
+

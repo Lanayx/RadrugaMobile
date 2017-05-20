@@ -1,0 +1,129 @@
+@import "../../styles/variables";
+@import "../../styles/kendo/kendo-mobile/common/mixins";
+@import "../../styles/mixins";
+
+
+
+@lineHight: 2.6rem;
+@lineBorder: .1rem solid #f8eee3;
+@padding: 1.5rem;
+
+#headSettings {
+    .flexbox();
+    .flex-justify-content(space-between);
+
+    & > div {
+       width:30%;
+    }
+
+    .profileIcon {
+        background-image:url(../../styles/svg/profileBlack.svg);
+        float: right;
+        margin: 1rem;
+    }
+
+    .editIcon {
+        position: absolute;
+        top: 65%;
+        left: 77%;
+        background-image:url(../../styles/svg/edit.svg);
+        background-repeat:no-repeat;
+    }
+
+    #divSettingsPhotoOuter {
+        margin-top:1rem;
+        width:40%;
+        position: relative;
+    }
+
+
+    #divSettingsPhoto {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        padding-bottom: 80%;
+        border-radius: 50%;
+        border: solid .3rem white;
+        margin: auto;
+    }
+}
+
+#divSettings {
+    margin-top: 1rem;
+
+    .btnFlat {
+        display: block;
+        border-collapse: collapse;
+        line-height: @lineHight;
+        background-color: white;
+        .box-sizing(border-box);
+        border-top: @lineBorder;
+        padding-left: 1.5rem;
+        position:relative;
+    }
+
+   
+
+    .cleanInput {
+        padding: 0 @padding+.6rem 0 0;
+        height: @lineHight;
+        width: 50%;
+        background: white;
+        border-top: @lineBorder;
+        border-radius: 0;
+        display: inline-block;
+        color: black;
+        .box-shadow(none);
+        .box-sizing(border-box);
+        vertical-align: middle;
+        text-align: right;
+    }
+
+    .cleanLabel {
+        width: 50%;
+        padding-left: @padding;
+        height: @lineHight;
+        line-height: @lineHight;
+        display: inline-block;
+        background: white;
+        border-top: @lineBorder;
+        .box-sizing(border-box);
+        vertical-align: middle;
+    }
+
+    .lastCleanLabel{
+        border-bottom: @lineBorder;
+    }
+
+    .km-switch{
+        margin-top:.2rem;
+    }
+
+    .btnWithArrow:after{
+        content:'';
+        background-image:url(../../styles/svg/nextArrow.svg);
+        background-repeat:no-repeat;
+        display:block;
+        height:@lineHight/2;
+        width:@lineHight/2;
+        margin:auto;
+        position:absolute;
+        top:0;right:@padding;bottom:0;        
+    }
+
+   
+    #spanNotificationsContainer {
+        height: @lineHight;
+        line-height: @lineHight;
+        display: inline-block;
+        width: 50%;
+        .box-sizing(border-box);
+        vertical-align: middle;
+        background: white;
+        border-top: @lineBorder;
+        border-bottom: @lineBorder;
+        text-align: right;
+        padding-right:@padding;
+    }
+}

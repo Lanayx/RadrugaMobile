@@ -1,0 +1,1590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <ProjectGuid>3878990d-27b3-4fdb-b1e2-41ffae221020</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <ToolsVersionPromptShown>1.8</ToolsVersionPromptShown>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".abproject" />
+    <Content Include=".debug.abproject" />
+    <Content Include=".release.abproject" />
+    <Content Include="App_Resources\Android\drawable-hdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-hdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-ldpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-mdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-xhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-xxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-xxxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-ldpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-mdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-xhdpi\icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\Android\drawable-xhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-xxhdpi\icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\Android\drawable-xxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-xxxhdpi\icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\Android\drawable-xxxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\iOS\Default-667h.png" />
+    <Content Include="App_Resources\iOS\Default-736h.png" />
+    <Content Include="App_Resources\iOS\Default-Landscape-1366%402x.png" />
+    <Content Include="App_Resources\iOS\Default-Landscape-667h.png" />
+    <Content Include="App_Resources\iOS\Default-Landscape-736h.png" />
+    <Content Include="App_Resources\iOS\Default-Portrait-1366%402x.png" />
+    <Content Include="App_Resources\iOS\icon-40%403x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\icon-60%403x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\icon-83.5%402x.png" />
+    <Content Include="App_Resources\iOS\watch-172x172.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-196x196.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-48x48.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-55x55.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-58x58.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-80x80.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-87x87.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\iOS\watch-88x88.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\WP8\Assets\BadgeLogo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\WP8\Assets\Logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\WP8\Assets\SplashScreen.png" />
+    <Content Include="App_Resources\WP8\Assets\SquareTile150x150.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\WP8\Assets\SquareTile71x71.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\WP8\Assets\StoreLogo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="App_Resources\WP8\Assets\WideLogo.png" />
+    <Content Include="App_Resources\WP8\SplashScreenImage.screen-720p.jpg" />
+    <Content Include="App_Resources\WP8\SplashScreenImage.screen-WVGA.jpg" />
+    <Content Include="Gulpfile.js" />
+    <Content Include="in-app-purchase.xml" />
+    <Content Include="scripts\Configuration.js">
+      <DependentUpon>scripts\Configuration.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\License.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\plugin.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\scripts\appinsights_before_prepare.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\www\AppInsights.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-ms-appinsights\www\AppInsights.lib.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\.gitignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\adapters\NativePageTransitionsIonicAdapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\adapters\NativePageTransitionsKendoAdapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\plugin.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\android\lib\AnimationFactory.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\android\lib\FlipAnimation.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\android\NativePageTransitions.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\ios\AppDelegate+nativepagetransitions.h">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\ios\AppDelegate+nativepagetransitions.m">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\ios\NativePageTransitions.h">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\ios\NativePageTransitions.m">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\src\winphone\NativePageTransitions.cs">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\NativePageTransitions\www\NativePageTransitions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\.gitignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\MIT-LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\plugin.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\amazon\ADMHandlerActivity.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\amazon\ADMMessageHandler.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\amazon\PushPlugin.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\android\com\plugin\gcm\CordovaGCMBroadcastReceiver.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\android\com\plugin\gcm\GCMIntentService.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\android\com\plugin\gcm\PushHandlerActivity.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\android\com\plugin\gcm\PushPlugin.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\android\libs\gcm.jar">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\ios\AppDelegate+notification.h">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\ios\AppDelegate+notification.m">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\ios\PushPlugin.h">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\ios\PushPlugin.m">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\windows\PushPluginProxy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\wp8\Newtonsoft.Json.dll">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\src\wp8\PushPlugin.cs">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\www\blackberry10\PushPluginProxy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\PushPlugin\www\PushNotification.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="resources\en.js">
+      <DependentUpon>resources\en.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="resources\ru.js">
+      <DependentUpon>resources\ru.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\ApplicationTools.js">
+      <DependentUpon>scripts\ApplicationTools.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="resources\en.ts" />
+    <TypeScriptCompile Include="resources\ru.ts" />
+    <TypeScriptCompile Include="scripts\ApplicationTools.ts" />
+    <Content Include="scripts\Authorization.js">
+      <DependentUpon>scripts\Authorization.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Authorization.ts" />
+    <Content Include="scripts\camera\cameraTools.js">
+      <DependentUpon>scripts\camera\cameraTools.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\camera\cameraTools.ts" />
+    <Content Include="scripts\camera\Image.js">
+      <DependentUpon>scripts\camera\Image.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\camera\Image.ts" />
+    <Content Include="scripts\Enums.js">
+      <DependentUpon>scripts\Enums.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Configuration.ts" />
+    <TypeScriptCompile Include="scripts\Enums.ts" />
+    <TypeScriptCompile Include="scripts\game\UniqueMissionsManager.ts" />
+    <Content Include="scripts\game\LevelMap.js">
+      <DependentUpon>scripts\game\LevelMap.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\LevelMap.ts" />
+    <Content Include="scripts\game\UniqueMissionsManager.js">
+      <DependentUpon>scripts\game\UniqueMissionsManager.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\game\uniqueMissions\Censored.js">
+      <DependentUpon>scripts\game\uniqueMissions\Censored.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\Censored.ts" />
+    <Content Include="scripts\game\uniqueMissions\Outpost.js">
+      <DependentUpon>scripts\game\uniqueMissions\Outpost.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\Outpost.ts" />
+    <Content Include="scripts\game\uniqueMissions\HelpChoice.js">
+      <DependentUpon>scripts\game\uniqueMissions\HelpChoice.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\HelpChoice.ts" />
+    <Content Include="scripts\game\uniqueMissions\Radar.js">
+      <DependentUpon>scripts\game\uniqueMissions\Radar.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\Radar.ts" />
+    <Content Include="scripts\game\uniqueMissions\HealthySpirit1.js">
+      <DependentUpon>scripts\game\uniqueMissions\HealthySpirit1.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\HealthySpirit1.ts" />
+    <Content Include="scripts\game\uniqueMissions\FriendBase.js">
+      <DependentUpon>scripts\game\uniqueMissions\FriendBase.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\FriendBase.ts" />
+    <Content Include="scripts\game\uniqueMissions\PerpetumMobile.js">
+      <DependentUpon>scripts\game\uniqueMissions\PerpetumMobile.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\PerpetumMobile.ts" />
+    <Content Include="scripts\game\uniqueMissions\YourBase.js">
+      <DependentUpon>scripts\game\uniqueMissions\YourBase.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\YourBase.ts" />
+    <Content Include="scripts\game\uniqueMissions\ShowYourself.js">
+      <DependentUpon>scripts\game\uniqueMissions\ShowYourself.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\ShowYourself.ts" />
+    <TypeScriptCompile Include="scripts\game\uniqueMissions\CommandPoint.ts" />
+    <Content Include="scripts\game\uniqueMissions\CommandPoint.js">
+      <DependentUpon>scripts\game\uniqueMissions\CommandPoint.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\geoLocation\GeoCoordinate.js">
+      <DependentUpon>scripts\geoLocation\GeoCoordinate.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\geoLocation\GeoCoordinate.ts" />
+    <Content Include="scripts\geoLocation\GeoTools.js">
+      <DependentUpon>scripts\geoLocation\GeoTools.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\geoLocation\GeoTools.ts" />
+    <Content Include="scripts\geoLocation\GeoDirection.js">
+      <DependentUpon>scripts\geoLocation\GeoDirection.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\geoLocation\GeoDirection.ts" />
+    <Content Include="scripts\ImageCache.js">
+      <DependentUpon>scripts\ImageCache.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\ImageCache.ts" />
+    <Content Include="scripts\Interfaces.js">
+      <DependentUpon>scripts\Interfaces.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Interfaces.ts" />
+    <Content Include="scripts\libs\CryptoJS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\fastclick.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\geolib.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\imgcache.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\mobiscroll.custom.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\Modifications.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\libs\require.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\Main.js">
+      <DependentUpon>scripts\Main.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Main.ts" />
+    <Content Include="scripts\models\AppErrorInfo.js">
+      <DependentUpon>scripts\models\AppErrorInfo.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\models\AppErrorInfo.ts" />
+    <Content Include="scripts\models\HintsModalView.js">
+      <DependentUpon>scripts\models\HintsModalView.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\models\Mission.js">
+      <DependentUpon>scripts\models\Mission.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\models\HintsModalView.ts" />
+    <TypeScriptCompile Include="scripts\models\Mission.ts" />
+    <Content Include="scripts\models\User.js">
+      <DependentUpon>scripts\models\User.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\models\User.ts" />
+    <Content Include="scripts\models\UserViewInfo.js">
+      <DependentUpon>scripts\models\UserViewInfo.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\models\WsInterfaces.js">
+      <DependentUpon>scripts\models\WsInterfaces.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\models\UserViewInfo.ts" />
+    <TypeScriptCompile Include="scripts\models\WsInterfaces.ts" />
+    <Content Include="scripts\Navigation.js">
+      <DependentUpon>scripts\Navigation.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Navigation.ts" />
+    <Content Include="scripts\notifications\MissionNotification.js">
+      <DependentUpon>scripts\notifications\MissionNotification.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\notifications\MissionNotification.ts" />
+    <Content Include="scripts\notifications\NotificationHub.js">
+      <DependentUpon>scripts\notifications\NotificationHub.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\notifications\NotificationHub.ts" />
+    <Content Include="scripts\notifications\NotificationInterfaces.js">
+      <DependentUpon>scripts\notifications\NotificationInterfaces.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\notifications\NotificationInterfaces.ts" />
+    <Content Include="scripts\notifications\NotificationTemplates.js">
+      <DependentUpon>scripts\notifications\NotificationTemplates.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\notifications\NotificationTemplates.ts" />
+    <Content Include="scripts\ServiceApi.js">
+      <DependentUpon>scripts\ServiceApi.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\ServiceApi.ts" />
+    <Content Include="scripts\Startup.js">
+      <DependentUpon>scripts\Startup.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Startup.ts" />
+    <Content Include="scripts\Storage.js">
+      <DependentUpon>scripts\Storage.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Storage.ts" />
+    <Content Include="scripts\Tools.js">
+      <DependentUpon>scripts\Tools.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="scripts\Tools.ts" />
+    <None Include="scripts\tsDefinitions\cordova\cordova.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\BatteryStatus.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Camera.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Contacts.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Device.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\DeviceMotion.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\DeviceOrientation.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Dialogs.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\FileSystem.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\FileTransfer.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Globalization.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\InAppBrowser.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Media.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\MediaCapture.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\NetworkInformation.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Push.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Splashscreen.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\StatusBar.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Transitions.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Vibration.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\WebSQL.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cordova\plugins\Window.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\cryptojs.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\custom\screen.d.ts" />
+    <None Include="scripts\tsDefinitions\custom\error.d.ts" />
+    <None Include="scripts\tsDefinitions\custom\geoLib.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\custom\mobiscroll.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\custom\insomnia.d.ts" />
+    <None Include="scripts\tsDefinitions\custom\navigator.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="scripts\tsDefinitions\require.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="scripts\UiCommon.js">
+      <SubType>Content</SubType>
+      <DependentUpon>scripts\UiCommon.ts</DependentUpon>
+    </Content>
+    <None Include="scripts\tsDefinitions\AppInsights.d.ts" />
+    <None Include="scripts\tsDefinitions\cordova\plugins\InAppPurchase.d.ts" />
+    <TypeScriptCompile Include="scripts\tsDefinitions\cordova\plugins\AppVersion.d.ts" />
+    <TypeScriptCompile Include="scripts\UiCommon.ts" />
+    <Content Include="scripts\VkManager.js">
+      <SubType>Content</SubType>
+      <DependentUpon>scripts\VkManager.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="scripts\VkManager.ts" />
+    <None Include="styles\callmenick\menu.less" />
+    <Content Include="styles\images\noimage.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\images\nophoto.png">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="styles\kendo\kendo-mobile\common\collapsible.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="styles\kendo\kendo-mobile\images\back.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\kendo\kendo-mobile\images\kendoui.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\kendo\kendo-mobile\images\kendoui.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\kendo\kendo-mobile\images\kendoui.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\kendo\kendo-mobile\images\wp8_icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\kendo\kendo-mobile\images\wp8_inverseicons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="styles\kendo\kendo-mobile\radruga\all.less" />
+    <None Include="styles\kendo\kendo-mobile\radruga\base.less" />
+    <None Include="styles\kendo\kendo-mobile\radruga\loader.less" />
+    <None Include="styles\kendo\kendo-mobile\radruga\switch.less" />
+    <Content Include="styles\svg\addPhoto.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\backArrow.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\badge.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\bag.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\caret-left.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\caret-right.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\checkmark2.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\circle-cross.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\circle-question.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\clock13.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\close.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\edit.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\email.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\eye-outline.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\key4.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\nextArrowWhite.svg" />
+    <Content Include="styles\svg\plus-black.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\logo.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\logoBottom.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\missionChainFrame.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\missionImageFrame.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\nextArrow.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\photo.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\plus.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\polygonBackground.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\profileBlack.svg" />
+    <Content Include="styles\svg\profileWhite.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\missions.svg" />
+    <Content Include="styles\svg\rating.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\refresh7.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\removePhoto.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\reward.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\settings.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\starEmpty.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\starFull.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\starHalf.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\stars-black.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\stars.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\thumbs-down.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\thumbs-up3.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\svg\vk.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="styles\variables.less" />
+    <None Include="styles\mobiscroll\mobiscroll.custom.css" />
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="index.html" />
+    <Content Include="kendo\js\kendo.mobile.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="kendo\styles\images\kendoui.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="kendo\typescript\jquery.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="kendo\typescript\kendo.mobile.d.ts">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="Plugins\org.chromium.system.memory\.fetch.json" />
+    <Content Include="Plugins\org.chromium.system.memory\package.json" />
+    <Content Include="Plugins\org.chromium.system.memory\plugin.xml" />
+    <Content Include="Plugins\org.chromium.system.memory\README.md" />
+    <Content Include="Plugins\org.chromium.system.memory\src\android\ChromeSystemMemory.java" />
+    <Content Include="Plugins\org.chromium.system.memory\src\ios\ChromeSystemMemory.m" />
+    <Content Include="Plugins\org.chromium.system.memory\system.memory.js" />
+    <None Include="styles\all.css">
+      <DependentUpon>styles\all.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\all.less" />
+    <Content Include="styles\all.min.css">
+      <DependentUpon>styles\all.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="styles\base\base.less" />
+    <None Include="styles\index\index.less" />
+    <None Include="styles\kendo\common\transitions.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\actionsheet.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\after.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\all.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\base.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\button.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\buttongroup.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\drawer.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\forms.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\icons.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\listview.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\mixins.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\modalview.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\navbar.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\popover.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\scroller.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\scrollview.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\splitview.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\switch.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\tabstrip.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\toolbar.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\common\workarounds.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\kendo.mobile.all.css">
+      <DependentUpon>styles\kendo\kendo-mobile\kendo.mobile.all.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <None Include="styles\kendo\kendo-mobile\kendo.mobile.all.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="styles\kendo\kendo-mobile\kendo.mobile.all.min.css">
+      <DependentUpon>styles\kendo\kendo-mobile\kendo.mobile.all.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\mobiscroll\mobiscroll.custom.css">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="styles\mixins.less" />
+    <Content Include="tsconfig.json" />
+    <None Include="views\accountView\account.css">
+      <DependentUpon>views\accountView\account.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\accountView\account.html" />
+    <Content Include="views\accountView\account.js">
+      <DependentUpon>views\accountView\account.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\accountView\account.less" />
+    <Content Include="views\accountView\account.min.css">
+      <DependentUpon>views\accountView\account.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\achievementView\achievement.css">
+      <DependentUpon>views\achievementView\achievement.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\achievementView\achievement.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\achievementView\achievement.js">
+      <DependentUpon>views\achievementView\achievement.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\achievementView\achievement.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\achievementView\achievement.min.css">
+      <DependentUpon>views\achievementView\achievement.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\accountView\account.ts" />
+    <TypeScriptCompile Include="views\achievementView\achievement.ts" />
+    <None Include="views\kindActions\kindActionNewView\kindActionNew.css">
+      <DependentUpon>views\kindActions\kindActionNewView\kindActionNew.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\kindActions\kindActionNewView\kindActionNew.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\kindActions\kindActionNewView\kindActionNew.js">
+      <DependentUpon>views\kindActions\kindActionNewView\kindActionNew.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\kindActions\kindActionNewView\kindActionNew.less">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="views\kindActions\kindActionListView\kindActionList.css">
+      <DependentUpon>views\kindActions\kindActionListView\kindActionList.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\kindActions\kindActionListView\kindActionList.html" />
+    <Content Include="views\kindActions\kindActionListView\kindActionList.js">
+      <DependentUpon>views\kindActions\kindActionListView\kindActionList.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\kindActions\kindActionListView\kindActionList.less" />
+    <Content Include="views\kindActions\kindActionListView\kindActionList.min.css">
+      <DependentUpon>views\kindActions\kindActionListView\kindActionList.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\kindActions\kindActionListView\kindActionList.ts" />
+    <Content Include="views\kindActions\kindActionNewView\kindActionNew.min.css">
+      <DependentUpon>views\kindActions\kindActionNewView\kindActionNew.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\kindActions\kindActionReadView\kindActionRead.css">
+      <DependentUpon>views\kindActions\kindActionReadView\kindActionRead.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\kindActions\kindActionReadView\kindActionRead.html" />
+    <Content Include="views\kindActions\kindActionReadView\kindActionRead.js">
+      <DependentUpon>views\kindActions\kindActionReadView\kindActionRead.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\kindActions\kindActionReadView\kindActionRead.less" />
+    <Content Include="views\kindActions\kindActionReadView\kindActionRead.min.css">
+      <DependentUpon>views\kindActions\kindActionReadView\kindActionRead.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionChainView\missionChain.css">
+      <DependentUpon>views\missionChainView\missionChain.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionChainView\missionChain.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\missionChainView\missionChain.js">
+      <DependentUpon>views\missionChainView\missionChain.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionChainView\missionChain.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionChainView\missionChain.min.css">
+      <DependentUpon>views\missionChainView\missionChain.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\kindActions\kindActionNewView\kindActionNew.ts" />
+    <TypeScriptCompile Include="views\kindActions\kindActionReadView\kindActionRead.ts" />
+    <TypeScriptCompile Include="views\missionChainView\missionChain.ts" />
+    <None Include="views\missionResults\failView\fail.css">
+      <DependentUpon>views\missionResults\failView\fail.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\failView\fail.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\missionResults\failView\fail.js">
+      <DependentUpon>views\missionResults\failView\fail.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionResults\failView\fail.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\failView\fail.min.css">
+      <DependentUpon>views\missionResults\failView\fail.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\missionResults\failView\fail.ts" />
+    <None Include="views\missionResults\failWarningView\failWarning.css">
+      <DependentUpon>views\missionResults\failWarningView\failWarning.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\failWarningView\failWarning.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\missionResults\failWarningView\failWarning.js">
+      <DependentUpon>views\missionResults\failWarningView\failWarning.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionResults\failWarningView\failWarning.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\failWarningView\failWarning.min.css">
+      <DependentUpon>views\missionResults\failWarningView\failWarning.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\missionResults\failWarningView\failWarning.ts" />
+    <None Include="views\missionResults\successView\success.css">
+      <DependentUpon>views\missionResults\successView\success.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\successView\success.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\missionResults\successView\success.js">
+      <DependentUpon>views\missionResults\successView\success.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionResults\successView\success.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\successView\success.min.css">
+      <DependentUpon>views\missionResults\successView\success.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\missionResults\successView\success.ts" />
+    <None Include="views\missionResults\waitView\wait.css">
+      <DependentUpon>views\missionResults\waitView\wait.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionResults\waitView\wait.html" />
+    <Content Include="views\missionResults\waitView\wait.js">
+      <DependentUpon>views\missionResults\waitView\wait.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionResults\waitView\wait.less" />
+    <Content Include="views\missionResults\waitView\wait.min.css">
+      <DependentUpon>views\missionResults\waitView\wait.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\missionResults\waitView\wait.ts" />
+    <None Include="views\missionView\mission.css">
+      <DependentUpon>views\missionView\mission.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionView\mission.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\missionView\mission.js">
+      <DependentUpon>views\missionView\mission.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\missionView\mission.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\missionView\mission.min.css">
+      <DependentUpon>views\missionView\mission.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\missionView\mission.ts" />
+    <None Include="styles\callmenick\hamburger.less" />
+    <None Include="views\profileReadView\profileRead.css">
+      <DependentUpon>views\profileReadView\profileRead.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\profileReadView\profileRead.html" />
+    <Content Include="views\profileReadView\profileRead.js">
+      <DependentUpon>views\profileReadView\profileRead.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\profileReadView\profileRead.less" />
+    <Content Include="views\profileReadView\profileRead.min.css">
+      <DependentUpon>views\profileReadView\profileRead.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\profileView\profile.css">
+      <DependentUpon>views\profileView\profile.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\profileView\profile.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\profileView\profile.js">
+      <DependentUpon>views\profileView\profile.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\profileView\profile.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\profileView\profile.min.css">
+      <DependentUpon>views\profileView\profile.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\profileReadView\profileRead.ts" />
+    <TypeScriptCompile Include="views\profileView\profile.ts" />
+    <None Include="views\questionView\question.css">
+      <DependentUpon>views\questionView\question.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\questionView\question.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\questionView\question.js">
+      <DependentUpon>views\questionView\question.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\questionView\question.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\questionView\question.min.css">
+      <DependentUpon>views\questionView\question.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\questionView\question.ts" />
+    <None Include="views\ratingView\rating.css">
+      <DependentUpon>views\ratingView\rating.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\ratingView\rating.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ratingView\rating.js">
+      <DependentUpon>views\ratingView\rating.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\ratingView\rating.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\ratingView\rating.min.css">
+      <DependentUpon>views\ratingView\rating.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\ratingView\rating.ts" />
+    <None Include="views\settingsView\settings.css">
+      <DependentUpon>views\settingsView\settings.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settingsView\settings.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settingsView\settings.js">
+      <DependentUpon>views\settingsView\settings.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\settingsView\settings.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settingsView\settings.min.css">
+      <DependentUpon>views\settingsView\settings.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\settingsView\settings.ts" />
+    <None Include="views\settings\aboutView\about.css">
+      <DependentUpon>views\settings\aboutView\about.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settings\aboutView\about.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settings\aboutView\about.js">
+      <DependentUpon>views\settings\aboutView\about.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\settings\aboutView\about.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settings\aboutView\about.min.css">
+      <DependentUpon>views\settings\aboutView\about.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\settings\aboutView\about.ts" />
+    <None Include="views\settings\addEmailView\addEmail.css">
+      <DependentUpon>views\settings\addEmailView\addEmail.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settings\addEmailView\addEmail.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settings\addEmailView\addEmail.js">
+      <DependentUpon>views\settings\addEmailView\addEmail.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\settings\addEmailView\addEmail.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settings\addEmailView\addEmail.min.css">
+      <DependentUpon>views\settings\addEmailView\addEmail.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\settings\addEmailView\addEmail.ts" />
+    <None Include="views\special\baseLocationsView\baseLocations.css">
+      <DependentUpon>views\special\baseLocationsView\baseLocations.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\special\baseLocationsView\baseLocations.html" />
+    <Content Include="views\special\baseLocationsView\baseLocations.js">
+      <DependentUpon>views\special\baseLocationsView\baseLocations.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\special\baseLocationsView\baseLocations.less" />
+    <Content Include="views\special\baseLocationsView\baseLocations.min.css">
+      <DependentUpon>views\special\baseLocationsView\baseLocations.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\settings\feedbackMessageView\feedbackMessage.css">
+      <DependentUpon>views\settings\feedbackMessageView\feedbackMessage.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settings\feedbackMessageView\feedbackMessage.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settings\feedbackMessageView\feedbackMessage.js">
+      <DependentUpon>views\settings\feedbackMessageView\feedbackMessage.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\settings\feedbackMessageView\feedbackMessage.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\settings\feedbackMessageView\feedbackMessage.min.css">
+      <DependentUpon>views\settings\feedbackMessageView\feedbackMessage.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\special\baseLocationsView\baseLocations.ts" />
+    <TypeScriptCompile Include="views\settings\feedbackMessageView\feedbackMessage.ts" />
+    <None Include="views\unique\showYourselfView\showYourself.css">
+      <DependentUpon>views\unique\showYourselfView\showYourself.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\unique\showYourselfView\showYourself.html" />
+    <Content Include="views\unique\showYourselfView\showYourself.js">
+      <DependentUpon>views\unique\showYourselfView\showYourself.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\unique\showYourselfView\showYourself.less" />
+    <Content Include="views\unique\showYourselfView\showYourself.min.css">
+      <DependentUpon>views\unique\showYourselfView\showYourself.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\unique\showYourselfView\showYourself.ts" />
+    <None Include="views\solutions\cameraView\camera.css">
+      <DependentUpon>views\solutions\cameraView\camera.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\solutions\cameraView\camera.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\solutions\cameraView\camera.js">
+      <DependentUpon>views\solutions\cameraView\camera.ts</DependentUpon>
+      <SubType>Content</SubType>
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\solutions\cameraView\camera.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>views\solutions\cameraView\camera.less</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="views\solutions\cameraView\camera.ts" />
+    <None Include="views\solutions\cameraView\camera.less" />
+    <None Include="views\unique\perpetumMobileView\perpetumMobile.css">
+      <DependentUpon>views\unique\perpetumMobileView\perpetumMobile.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\unique\perpetumMobileView\perpetumMobile.html" />
+    <Content Include="views\unique\perpetumMobileView\perpetumMobile.js">
+      <DependentUpon>views\unique\perpetumMobileView\perpetumMobile.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\unique\perpetumMobileView\perpetumMobile.less" />
+    <Content Include="views\unique\perpetumMobileView\perpetumMobile.min.css">
+      <DependentUpon>views\unique\perpetumMobileView\perpetumMobile.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\unique\perpetumMobileView\perpetumMobile.ts" />
+    <None Include="views\solutions\pathView\path.css">
+      <DependentUpon>views\solutions\pathView\path.less</DependentUpon>
+    </None>
+    <Content Include="views\solutions\pathView\path.html" />
+    <Content Include="views\solutions\pathView\path.js">
+      <DependentUpon>views\solutions\pathView\path.ts</DependentUpon>
+    </Content>
+    <None Include="views\solutions\pathView\path.less" />
+    <Content Include="views\solutions\pathView\path.min.css">
+      <DependentUpon>views\solutions\pathView\path.less</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="views\solutions\pathView\path.ts" />
+    <None Include="views\solutions\commonPlaceView\commonPlace.css">
+      <DependentUpon>views\solutions\commonPlaceView\commonPlace.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\solutions\commonPlaceView\commonPlace.html" />
+    <Content Include="views\solutions\commonPlaceView\commonPlace.js">
+      <DependentUpon>views\solutions\commonPlaceView\commonPlace.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\solutions\commonPlaceView\commonPlace.less" />
+    <Content Include="views\solutions\commonPlaceView\commonPlace.min.css">
+      <DependentUpon>views\solutions\commonPlaceView\commonPlace.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\solutions\commonPlaceView\commonPlace.ts" />
+    <None Include="views\solutions\rightAnswerView\rightAnswer.css">
+      <DependentUpon>views\solutions\rightAnswerView\rightAnswer.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\solutions\rightAnswerView\rightAnswer.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\solutions\rightAnswerView\rightAnswer.js">
+      <DependentUpon>views\solutions\rightAnswerView\rightAnswer.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\solutions\rightAnswerView\rightAnswer.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\solutions\rightAnswerView\rightAnswer.min.css">
+      <DependentUpon>views\solutions\rightAnswerView\rightAnswer.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\solutions\rightAnswerView\rightAnswer.ts" />
+    <None Include="views\solutions\videoView\video.css">
+      <SubType>Content</SubType>
+      <DependentUpon>views\solutions\videoView\video.less</DependentUpon>
+    </None>
+    <Content Include="views\solutions\videoView\video.html" />
+    <Content Include="views\solutions\videoView\video.js">
+      <DependentUpon>views\solutions\videoView\video.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\solutions\videoView\video.less" />
+    <Content Include="views\solutions\videoView\video.min.css">
+      <DependentUpon>views\solutions\videoView\video.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\solutions\videoView\video.ts" />
+    <None Include="views\solutions\textCreationView\textCreation.css">
+      <DependentUpon>views\solutions\textCreationView\textCreation.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\solutions\textCreationView\textCreation.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\solutions\textCreationView\textCreation.js">
+      <DependentUpon>views\solutions\textCreationView\textCreation.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\solutions\textCreationView\textCreation.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\solutions\textCreationView\textCreation.min.css">
+      <DependentUpon>views\solutions\textCreationView\textCreation.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\solutions\textCreationView\textCreation.ts" />
+    <None Include="views\start\enterView\enter.css">
+      <DependentUpon>views\start\enterView\enter.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\enterView\enter.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\start\enterView\enter.js">
+      <DependentUpon>views\start\enterView\enter.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\start\enterView\enter.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\enterView\enter.min.css">
+      <DependentUpon>views\start\enterView\enter.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\start\enterView\enter.ts" />
+    <None Include="views\start\loginView\login.css">
+      <DependentUpon>views\start\loginView\login.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\loginView\login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\start\loginView\login.js">
+      <DependentUpon>views\start\loginView\login.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\start\loginView\login.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\loginView\login.min.css">
+      <DependentUpon>views\start\loginView\login.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\start\loginView\login.ts" />
+    <None Include="views\start\registerView\register.css">
+      <DependentUpon>views\start\registerView\register.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\registerView\register.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\start\registerView\register.js">
+      <DependentUpon>views\start\registerView\register.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\start\registerView\register.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\registerView\register.min.css">
+      <DependentUpon>views\start\registerView\register.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\start\registerView\register.ts" />
+    <None Include="views\start\requiredFieldsView\requiredFields.css">
+      <DependentUpon>views\start\requiredFieldsView\requiredFields.less</DependentUpon>
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\requiredFieldsView\requiredFields.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\start\requiredFieldsView\requiredFields.js">
+      <DependentUpon>views\start\requiredFieldsView\requiredFields.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="views\start\requiredFieldsView\requiredFields.less">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="views\start\requiredFieldsView\requiredFields.min.css">
+      <DependentUpon>views\start\requiredFieldsView\requiredFields.less</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\start\requiredFieldsView\requiredFields.ts" />
+    <Content Include="views\start\resetPasswordView\resetPassword.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\start\resetPasswordView\resetPassword.js">
+      <DependentUpon>views\start\resetPasswordView\resetPassword.ts</DependentUpon>
+      <SubType>Content</SubType>
+    </Content>
+    <TypeScriptCompile Include="views\start\resetPasswordView\resetPassword.ts" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <Content Include="kendo\js\jquery.min.js" />
+    <None Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="kendo\styles\images\back.png" />
+    <Content Include="kendo\styles\images\kendoui.ttf" />
+    <Content Include="kendo\styles\images\kendoui.woff" />
+    <Content Include="kendo\styles\images\wp8_icons.png" />
+    <Content Include="kendo\styles\images\wp8_inverseicons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xxxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\Android\drawable-xhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xxxhdpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Assets\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="kendo\" />
+    <Folder Include="kendo\js\" />
+    <Folder Include="kendo\styles\" />
+    <Folder Include="kendo\styles\images\" />
+    <Folder Include="kendo\typescript\" />
+    <Folder Include="Plugins\cordova-plugin-ms-appinsights\" />
+    <Folder Include="Plugins\cordova-plugin-ms-appinsights\scripts\" />
+    <Folder Include="Plugins\cordova-plugin-ms-appinsights\www\" />
+    <Folder Include="Plugins\NativePageTransitions\" />
+    <Folder Include="Plugins\NativePageTransitions\adapters\" />
+    <Folder Include="Plugins\NativePageTransitions\src\" />
+    <Folder Include="Plugins\NativePageTransitions\src\android\" />
+    <Folder Include="Plugins\NativePageTransitions\src\android\lib\" />
+    <Folder Include="Plugins\NativePageTransitions\src\ios\" />
+    <Folder Include="Plugins\NativePageTransitions\src\winphone\" />
+    <Folder Include="Plugins\NativePageTransitions\www\" />
+    <Folder Include="Plugins\org.chromium.system.memory\" />
+    <Folder Include="Plugins\org.chromium.system.memory\src\" />
+    <Folder Include="Plugins\org.chromium.system.memory\src\android\" />
+    <Folder Include="Plugins\org.chromium.system.memory\src\ios\" />
+    <Folder Include="Plugins\PushPlugin\" />
+    <Folder Include="Plugins\PushPlugin\src\" />
+    <Folder Include="Plugins\PushPlugin\src\amazon\" />
+    <Folder Include="Plugins\PushPlugin\src\android\" />
+    <Folder Include="Plugins\PushPlugin\src\android\com\" />
+    <Folder Include="Plugins\PushPlugin\src\android\com\plugin\" />
+    <Folder Include="Plugins\PushPlugin\src\android\com\plugin\gcm\" />
+    <Folder Include="Plugins\PushPlugin\src\android\libs\" />
+    <Folder Include="Plugins\PushPlugin\src\ios\" />
+    <Folder Include="Plugins\PushPlugin\src\windows\" />
+    <Folder Include="Plugins\PushPlugin\src\wp8\" />
+    <Folder Include="Plugins\PushPlugin\www\" />
+    <Folder Include="Plugins\PushPlugin\www\blackberry10\" />
+    <Folder Include="resources\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\camera\" />
+    <Folder Include="scripts\game\uniqueMissions\" />
+    <Folder Include="scripts\geoLocation\" />
+    <Folder Include="scripts\libs\" />
+    <Folder Include="scripts\models\" />
+    <Folder Include="scripts\game\" />
+    <Folder Include="scripts\notifications\" />
+    <Folder Include="scripts\tsDefinitions\" />
+    <Folder Include="scripts\tsDefinitions\cordova\" />
+    <Folder Include="scripts\tsDefinitions\cordova\plugins\" />
+    <Folder Include="scripts\tsDefinitions\custom\" />
+    <Folder Include="styles\kendo\" />
+    <Folder Include="styles\kendo\common\" />
+    <Folder Include="styles\kendo\kendo-mobile\" />
+    <Folder Include="styles\kendo\kendo-mobile\common\" />
+    <Folder Include="styles\index\" />
+    <Folder Include="styles\base\" />
+    <Folder Include="styles\kendo\kendo-mobile\images\" />
+    <Folder Include="styles\kendo\kendo-mobile\radruga\" />
+    <Folder Include="styles\mobiscroll\" />
+    <Folder Include="styles\callmenick\" />
+    <Folder Include="styles\svg\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="styles\" />
+    <Folder Include="styles\images\" />
+    <Folder Include="views\" />
+    <Folder Include="views\achievementView\" />
+    <Folder Include="views\kindActions\kindActionNewView\" />
+    <Folder Include="views\kindActions\kindActionListView\" />
+    <Folder Include="views\kindActions\kindActionReadView\" />
+    <Folder Include="views\missionChainView\" />
+    <Folder Include="views\missionResults\" />
+    <Folder Include="views\missionResults\failView\" />
+    <Folder Include="views\missionResults\failWarningView\" />
+    <Folder Include="views\missionResults\successView\" />
+    <Folder Include="views\missionResults\waitView\" />
+    <Folder Include="views\missionView\" />
+    <Folder Include="views\kindActions\" />
+    <Folder Include="views\accountView\" />
+    <Folder Include="views\profileReadView\" />
+    <Folder Include="views\special\" />
+    <Folder Include="views\profileView\" />
+    <Folder Include="views\questionView\" />
+    <Folder Include="views\ratingView\" />
+    <Folder Include="views\settingsView\" />
+    <Folder Include="views\settings\" />
+    <Folder Include="views\settings\aboutView\" />
+    <Folder Include="views\settings\addEmailView\" />
+    <Folder Include="views\settings\feedbackMessageView\" />
+    <Folder Include="views\solutions\" />
+    <Folder Include="views\solutions\cameraView\" />
+    <Folder Include="views\solutions\pathView\" />
+    <Folder Include="views\solutions\commonPlaceView\" />
+    <Folder Include="views\solutions\rightAnswerView\" />
+    <Folder Include="views\solutions\videoView\" />
+    <Folder Include="views\solutions\textCreationView\" />
+    <Folder Include="views\special\baseLocationsView\" />
+    <Folder Include="views\start\" />
+    <Folder Include="views\start\enterView\" />
+    <Folder Include="views\start\loginView\" />
+    <Folder Include="views\start\registerView\" />
+    <Folder Include="views\start\requiredFieldsView\" />
+    <Folder Include="views\start\resetPasswordView\" />
+    <Folder Include="views\unique\" />
+    <Folder Include="views\unique\perpetumMobileView\" />
+    <Folder Include="views\unique\showYourselfView\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!-- 
+   TODO: Uncomment this code if you need to customize the build process.
+  <Target Name="BeforeBuild">
+    <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+  </Target>
+    
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptTarget>Unknown</TypeScriptTarget>
+    <TypeScriptJSXEmit>-1</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+</Project>

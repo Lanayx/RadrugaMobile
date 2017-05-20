@@ -1,0 +1,28 @@
+#showYourselfBody {
+  text-align: center;
+}
+#showYourselfBody .addPhotoBtn {
+  background-image: url(../../../styles/svg/addPhoto.svg);
+  display: inline-block;
+}
+#showYourselfBody .greenButton {
+  display: block;
+  margin-top: 2rem;
+}
+#showYourselfBody .photoContainer {
+  position: relative;
+  margin: .8rem;
+  display: inline-block;
+}
+#showYourselfBody .photoTaken {
+  border-radius: .5rem;
+  height: 7rem;
+  width: 7rem;
+  background-size: cover;
+}
+#showYourselfBody .photoIcon {
+  margin-top: 2rem;
+}
+#showYourselfBody .km-listview-wrapper {
+  display: inline-block;
+}

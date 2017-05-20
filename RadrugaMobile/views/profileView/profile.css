@@ -1,0 +1,181 @@
+#headProfile {
+  background: -webkit-linear-gradient(#30323a, #30323a);
+  background: linear-gradient(#30323a, #30323a);
+  background-repeat: no-repeat;
+  background-position-y: -2.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+#headProfile > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#headProfile .figPhoto {
+  text-align: center;
+  margin: 2.5rem auto 0;
+  width: 50%;
+  height: 100%;
+}
+#headProfile .divProfilePhoto {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  padding-bottom: 80%;
+  border-radius: 50%;
+  border: solid .5rem #fffcf6;
+  margin: auto;
+}
+#divProfileBody .divName {
+  font: bold 1.5rem arial;
+  margin-bottom: .5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+#divProfileBody .plusIcon {
+  float: right;
+  background-image: url(../../styles/svg/plus.svg);
+}
+#divProfileBody .badge {
+  width: 75%;
+  padding-bottom: 75%;
+  position: relative;
+  margin: 0 auto .5rem;
+  background-repeat: no-repeat;
+}
+#divProfileBody .badge:after {
+  content: '';
+  background-image: url(../../styles/svg/polygonBackground.svg);
+  position: absolute;
+  width: 115%;
+  padding-bottom: 115%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  left: -7%;
+  top: -5%;
+}
+#divProfileBody .badgeLabel {
+  margin-right: .2rem;
+}
+#divProfileBody .badgeAndDescription {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  text-align: center;
+}
+#divProfileBody .divQuestionMark {
+  background-image: url(../../styles/svg/question.svg);
+  position: absolute;
+  width: 75%;
+  padding-bottom: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 12%;
+  top: 12%;
+}
+#divProfileBody .levelPoints {
+  float: right;
+}
+#divProfileBody .svgRadrugaColor {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#divProfileBody .horizontalLine {
+  position: absolute;
+  z-index: -2;
+  width: 123.5%;
+  left: 0;
+  top: 40%;
+  margin-left: -12%;
+}
+#divProfileBody .divBadges {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+#divProfileBody .achievmentsBadge {
+  background-image: url(../../styles/svg/reward.svg);
+}
+#divProfileBody .missionsBadge {
+  background-image: url(../../styles/svg/missions.svg);
+}
+#divProfileBody .ratingBadge {
+  background-image: url(../../styles/svg/rating.svg);
+}
+#divProfileBody #prLevel {
+  background-color: #ffe9cc;
+  color: #ffc175;
+}
+#divProfileBody #prLevel::-webkit-progress-bar {
+  background-color: #ffe9cc;
+}
+#divProfileBody #prLevel::-webkit-progress-value {
+  background-color: #ffc175;
+}
+#divProfileBody #prLevel::-moz-progress-bar {
+  background-color: #ffc175;
+}
+#divProfileBody #prKindScale {
+  background-color: #c9edd4;
+  color: #4cd398;
+}
+#divProfileBody #prKindScale::-webkit-progress-bar {
+  background-color: #c9edd4;
+}
+#divProfileBody #prKindScale::-webkit-progress-value {
+  background-color: #4cd398;
+}
+#divProfileBody #prKindScale::-moz-progress-bar {
+  background-color: #4cd398;
+}
+#menu .liMenuItem {
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+#menu .liMenuItem:nth-child(1),
+#menu .liMenuItem:nth-child(2),
+#menu .liMenuItem:nth-child(3) {
+  margin-top: 3.2rem;
+}
+#menu .navContainer {
+  width: 55%;
+  display: inline-block;
+  margin: 1rem;
+}
+#menu .navLabel {
+  margin-top: .2rem;
+}
+#menu .svgMenu {
+  height: 3rem;
+}
+#vProfile .km-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}

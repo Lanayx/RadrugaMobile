@@ -1,0 +1,13 @@
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+*/bin
+*/obj
+*.user-settings.xml
+/packages
+/.vs/
+/UpgradeLog.htm
+/RadrugaMobile.sln.GhostDoc.xml
+/RadrugaMobile/node_modules

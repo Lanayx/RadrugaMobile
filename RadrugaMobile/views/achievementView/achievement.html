@@ -1,0 +1,41 @@
+<div id="vAchievement"
+     data-role="view"
+     data-title="Achievement"
+     data-init="app.appInit.achievementViewModelInit"
+     data-show="app.appInit.achievementViewModelShow"
+     data-hide="app.appInit.achievementViewModelHide"
+     data-layout="close-layout"
+     class="horizontalViewGradient">
+
+    <div class="verticalLine"></div>
+    <div id="divAchievementBody">
+        <ul data-role="listview"
+            data-bind="source: achievementDataSource"
+            data-template="achievement-template"></ul>
+    </div>
+</div>
+
+<script id="achievement-template" type="text/x-kendo-template">
+    <div class="achievementItem">
+        <div class="achievementItemImage" data-bind="style: { backgroundImage: achievementDefaultImage }, visible: finished"></div>
+        <div class="divBadgeProgressOuter">
+            <svg class="svgBadgeProgress" data-bind="visible: inProgress" data-progress="${achievementProgress}" width="100%" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g>
+                        <circle fill="\\#F9FFBF" cx="65" cy="65" r="60"></circle>
+                        <path d="M65,130 C100.898509,130 130,100.898509 130,65 C130,29.1014913 100.898509,0 65,0 C29.1014913,0 0,29.1014913 0,65 C0,100.898509 29.1014913,130 65,130 Z M65,122 C96.4802307,122 122,96.4802307 122,65 C122,33.5197693 96.4802307,8 65,8 C33.5197693,8 8,33.5197693 8,65 C8,96.4802307 33.5197693,122 65,122 Z" fill="\\#FFCDA0"></path>
+                        <path d="M65,8 L65,0 Z" class="progressStrip" fill="\\#FF9782"></path>
+                    </g>
+                </g>
+            </svg>
+            <div class="achievementProgressOuter">
+                <span class="achievementProgress" data-bind="visible: inProgress">${achievementProgress}<span class="achievementProgressPercent">%</span></span>
+            </div>
+            
+        </div>
+        <div class="achievementItemDescription">${achievementDescription}</div>
+        <div class="divHeightCarrier"></div>
+
+    </div>
+</script>
+

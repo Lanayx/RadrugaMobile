@@ -1,0 +1,32 @@
+#perpetumMobileBody {
+  text-align: center;
+}
+#perpetumMobileBody .timeInfo {
+  margin: 2rem 0 1rem;
+}
+#perpetumMobileBody .indicatorMark {
+  float: left;
+  margin: .5rem;
+  width: 14%;
+  padding-top: 14%;
+  border-radius: 50%;
+  border-width: .5rem;
+  border-color: #FFCDA0;
+  border-style: solid;
+  display: inline-block;
+  /* Prevent background color leak outs */
+  background-clip: padding-box;
+}
+#perpetumMobileBody .moving {
+  background-color: #4cd398;
+}
+#perpetumMobileBody .staying {
+  background-color: #ff9782;
+}
+#perpetumMobileBody .triesInfo {
+  clear: both;
+}
+#perpetumMobileBody .greenButton {
+  display: block;
+  margin-top: 2rem;
+}

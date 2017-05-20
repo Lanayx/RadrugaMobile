@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+
+@itemHight: 25%;
+
+#divAchievementBody {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 4.2%;
+    position: relative;
+
+    .achievementItem {
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .achievementItemImage {
+        width: @itemHight;
+        padding-top: @itemHight;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .achievementItemDescription {
+        top: 25%;
+        left: 35%;
+        position: absolute;
+    }
+    
+    .achievementProgress {        
+        color: @redColor;
+        font-size: @bigFontSize;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    .achievementProgressPercent {
+        font-size: @mediumFontSize;
+    }
+
+    .achievementProgressOuter {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .achievementProgressOuter:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .divBadgeProgressOuter {
+        position: absolute;
+        width: @itemHight;
+        height: 100%;
+    }
+
+    .divHeightCarrier {
+        padding-top: @itemHight;
+    }
+
+    .svgBadgeProgress {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        top: 0;
+    }
+}

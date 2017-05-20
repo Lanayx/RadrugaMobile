@@ -1,0 +1,19 @@
+<div id="vFeedbackMessage"
+     data-role="view"
+     data-title="FeedbackMessage"
+     data-init="app.appInit.feedbackMessageViewModelInit"
+     data-show="app.appInit.feedbackMessageViewModelShow"
+     data-hide="app.appInit.feedbackMessageViewModelHide"
+     data-layout="back-layout"
+     class="horizontalViewGradient">
+
+    <div id="divFeedbackMessageBody" class="formContent">
+        <div data-bind="invisible: feedbackSent">
+            <textarea data-bind='value: feedbackMessageDescription, disabled: feedbackMessageDescriptionDisabled, attr:{placeholder: feedbackMessageDescriptionRes}' rows="8" required></textarea>
+            <a data-role="button" data-bind='click:sendFeedbackMessage' class="greenButton">
+                <div data-bind="text:btnSendRes"></div>
+            </a>
+        </div>
+        <div data-bind="visible: feedbackSent, text: feedbackSentRes"></div>
+    </div>
+</div>

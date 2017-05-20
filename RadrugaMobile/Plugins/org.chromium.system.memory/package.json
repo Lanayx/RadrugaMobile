@@ -1,0 +1,22 @@
+{
+    "version": "1.1.0",
+    "name": "org.chromium.system.memory",
+    "cordova_name": "Chrome System Memory API",
+    "repo": "https://github.com/MobileChromeApps/mobile-chrome-apps.git",
+    "issue": "https://github.com/MobileChromeApps/mobile-chrome-apps/issues",
+    "keywords": [
+        "chrome",
+        "system",
+        "memory"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

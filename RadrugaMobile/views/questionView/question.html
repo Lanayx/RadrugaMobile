@@ -1,0 +1,40 @@
+<div id="vQuestion"
+     data-role="view"
+     data-title="Question"
+     data-init="app.appInit.questionViewModelInit"
+     data-show="app.appInit.questionViewModelShow"
+     data-hide="app.appInit.questionViewModelHide"
+     data-layout="empty-layout" 
+     class="verticalViewGradient">
+    
+    
+
+    <header class="headCommon questionHeader">
+        <div></div>
+        <div class="questionNumber">
+            <span data-bind="text: questionNumber"></span>&nbsp;
+            <span data-bind="text: fromRes"></span>&nbsp;
+            <span data-bind="text: totalQuestionsNumber"></span>
+        </div>
+        <div>
+            <a class="mediumIcon closeIcon" data-bind="click: navigateToProfile"></a>
+        </div>
+    </header>
+    <div id="divQuestionBody" class="formContent">
+        <div data-bind="visible: questionsVisible">
+            <div data-bind="text:questionText"></div>
+            <div id="divQuestonAnswers">
+                <ul data-role="listview"
+                    data-bind="source: answersDataSource"
+                    data-template="answer-button-template"></ul>
+            </div>
+        </div>
+        <div data-bind="visible: completeTextVisible, text: completeTextRes"></div>
+    </div>   
+</div>
+
+<script id="answer-button-template" type="text/x-kendo-template">
+    <div class="orangeButton" data-role="button" data-bind="click: answerChosen" 
+         data-quality-id="${personQualityId}" data-score="${score}">${text}
+        </div>
+</script>

@@ -1,0 +1,51 @@
+<div id="vMissionChain"
+     data-role="view"
+     data-title="MissionChain"
+     data-init="app.appInit.missionChainViewModelInit"
+     data-show="app.appInit.missionChainViewModelShow"
+     data-hide="app.appInit.missionChainViewModelHide"
+     class="horizontalViewGradient">
+
+ 
+    <header id="headMissionChain" class="headCommon">
+        <div>
+            <a class="mediumIcon profileIcon" data-bind="click: navigateToProfile"></a>
+        </div>
+        <div></div>
+        <div>
+            <a class="mediumIcon refreshIcon" data-bind="click: refreshMissions"></a>
+        </div>
+    </header>
+
+
+
+    <div class="verticalLine"></div>
+    <div id="divMissionChainBody">
+        <ul data-role="listview"
+            data-bind="source: missionChainDataSource"
+            data-template="mission-chain-template"></ul>
+    </div>
+</div>
+
+<script id="mission-chain-template" type="text/x-kendo-template">
+    <div class="missionChainItem" data-bind="click: missionChosen" data-mission-id="${id}" data-mission-status="${displayStatus}">
+        <div class="missionChainImageContainer">
+            <div class="missionChainItemImage missionChainItemImageInner" data-bind="style: { backgroundImage: imageUrl }"></div>
+            <div class="missionChainItemImage missionChainItemImageOuter"></div>
+        </div>
+        <div class="missionChainItemDescription">
+            <div class="missionTitle">${name}</div>
+            <div class="missionDifficulty" data-difficulty="${difficulty}">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>           
+        </div>
+        <div class="statusContainer">
+            <div class="missionChainItemImage" data-bind="style: { backgroundImage: displayStatusImage }"></div>
+        </div>
+        <div class="horizontalLine" data-bind="visible: isFinal"></div>
+    </div>
+</script>

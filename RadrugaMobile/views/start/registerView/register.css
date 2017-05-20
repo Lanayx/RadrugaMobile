@@ -1,0 +1,15 @@
+#vRegister h4 {
+  margin: .5rem 0;
+}
+#vRegister input,
+#vRegister .approvalHeader {
+  margin-top: 1.2rem;
+}
+#vRegister .link {
+  margin-top: .2em;
+  display: inline-block;
+}
+#vRegister .km-button {
+  margin-top: 1.2em;
+  display: block;
+}

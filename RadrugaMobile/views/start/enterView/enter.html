@@ -1,0 +1,24 @@
+<div id="vEnter"
+     data-role="view"
+     data-title="Enter"
+     data-init="app.appInit.enterViewModelInit"
+     data-show="app.appInit.enterViewModelShow"
+     data-hide="app.appInit.enterViewModelHide"
+     data-layout="start-layout"
+     class="verticalViewGradient">
+
+
+    <div class="formContent">
+
+        <a data-role="button" data-bind='click:vkEnter' class="blueButton">
+            <div data-bind="text:vkEnterRes"></div>
+        </a>
+        <span class="spanIcon spanVkButton"></span>
+
+        <a data-role="button" data-bind='click:emailEnter' class="orangeButton">
+            <div data-bind="text:emailEnterRes"></div>
+        </a>
+        <span class="spanIcon spanEmailButton"></span>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+<div id="vFailWarning"
+     data-role="view"
+     data-title="FailWarning"
+     data-show="app.appInit.failWarningViewModelShow"
+     data-hide="app.appInit.failWarningViewModelHide"
+     class="horizontalViewGradient">
+
+
+    <header class="headCommon missionHeader">
+        <div></div>
+        <div class="missionImageContainer">
+            <div class="missionImage imageCover" data-bind="style: { backgroundImage: missionImagePath }"></div>
+            <div class="missionImage imageBorder"></div>
+        </div>
+        <div></div>
+    </header>
+    <div id="failWarningBody" class="formContent">
+        <div class="failWarningTitle" data-bind="text:failWarningTitleRes"></div>
+        <div>
+            <div data-bind="text:failWarningMessageRes"></div>
+        </div>
+        <a data-role="button" data-bind='click:goToFail' class="redButton">
+            <div data-bind="text:goToFailRes"></div>
+        </a>
+        <a data-role="button" data-bind='click:goToMission' class="greenButton">
+            <div data-bind="text:goToMissionRes"></div>
+        </a>
+    </div>
+
+</div>

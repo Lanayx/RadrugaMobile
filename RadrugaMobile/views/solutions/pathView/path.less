@@ -1,0 +1,61 @@
+@import "../../../styles/kendo/kendo-mobile/common/mixins";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+#pathBody {
+    text-align: center;
+
+    .timeInfo {
+        margin: 6%;
+    }
+
+    .greenButton {
+        display: block;
+    }
+
+
+    @markSize: 2.5rem;
+    @markMargin: .4rem;
+    @markBorder: .5rem;
+
+    .pointsList {
+        margin-top:1rem;
+        max-height: (@markSize + @markMargin * 2 + @markBorder * 2) * 3;
+        border: 2px dashed @blackColor;
+        border-radius: @borderRadius;
+    }
+
+    .pointMark {
+        float: left;
+        margin: @markMargin;
+        width: @markSize;
+        padding-top: @markSize;
+        border-radius: 50%;        
+        border-width: @markBorder;
+        border-color: @lightRedColor;
+        border-style: solid;
+        /* Prevent background color leak outs */
+        .background-clip(padding-box)
+    }
+
+    .pointContainer{
+        line-height:inherit;
+        overflow:hidden;
+    }
+
+    .pointName {
+        padding-top: @markSize/2;
+    }
+
+    .reached {
+        background-color: @redColor;
+    }
+
+    .unreached {
+        background-color: @yellowColor;
+    }
+
+    .current {
+        background-color: rgba(0,0,0,0.12);
+    }
+}

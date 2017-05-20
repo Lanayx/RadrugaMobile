@@ -1,0 +1,20 @@
+.km-loader .km-loading {
+    border-top: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-right: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-left: 0.5rem solid #ffffff;
+    border-radius: 50%;
+}
+
+.km-loader .km-loading:after{
+    display:none;//fix for android
+}
+
+@keyframes km-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

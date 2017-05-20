@@ -1,0 +1,12 @@
+#waitBody .waitTitle {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+#waitBody .greenButton,
+#waitBody .blueButton {
+  width: 85%;
+  margin: auto;
+}
+#waitBody .divBtnWrapper {
+  margin: 1rem auto;
+}

@@ -1,0 +1,54 @@
+<div id="vRating"
+     data-role="view"
+     data-title="Rating"
+     data-show="app.appInit.ratingViewModelShow"
+     data-hide="app.appInit.ratingViewModelHide"
+     class="horizontalViewGradient">
+
+    <header class="headCommon" id="headRating">
+        <a class="mediumIcon closeIcon" data-bind="click: navigateToProfile"></a>
+        <div class="divCounters">
+            <div class="divRatingInfoContainer">
+                <div class="ratingInfo" data-bind="text: place"></div>
+                <div class="ratingInfoRes" data-bind="text: placeRes"></div>
+            </div>
+            <div class="divRatingInfoContainer">
+                <div class="ratingInfo" data-bind="text: playersCount"></div>
+                <div class="ratingInfoRes" data-bind="text: playersCountRes"></div>
+            </div>
+            <div class="divRatingInfoContainer">
+                <div class="ratingInfo" data-bind="text: pointsCount"></div>
+                <div class="ratingInfoRes" data-bind="text: pointsCountRes"></div>
+            </div>
+        </div>
+        <div class="divTabs">
+            <a data-role="button" data-bind="click: commonView, visible: userHasLocation">
+                <div class="ratingTab km-button" data-bind="text:commonViewRes, css: { greenButton: commonSelected }"></div>
+            </a><a data-role="button" data-bind="click: countryView, visible: userHasLocation">
+                <div class="ratingTab km-button" data-bind="text:countryViewRes, css: { greenButton: countrySelected }"></div>
+            </a><a data-role="button" data-bind="click: cityView, visible: userHasLocation">
+                <div class="ratingTab km-button" data-bind="text:cityViewRes, css: { greenButton: citySelected }"></div>
+            </a>
+        </div>
+    </header>
+    <div id="divRatingBody">
+        <ul data-role="listview"
+            data-bind="source: topPlayersDataSource"
+            data-template="player-rating-template"></ul>
+        <div class="horizontalLine"></div>
+        <ul data-role="listview"
+            data-bind="source: nearPlayersDataSource"
+            data-template="player-rating-template"></ul>
+    </div>
+</div>
+
+<script id="player-rating-template" type="text/x-kendo-template">
+    <div class="playerRatingItem" data-bind="click: userChosen" data-user-id="${userId}" data-avatar="${playerAvatar}" data-points="${playerPointsCount}">
+        <div class="playerPlace">${playerPlace}</div><div class="playerAvatarOuter">
+            <div class="playerAvatar" data-bind="style: { backgroundImage: playerAvatar }"></div>
+        </div><div class="playerRatingDescription">
+            <div class="playerNickName">${playerNickName}</div>
+            <div class="playerPointsCount">${playerPointsCount}</div>
+        </div>
+    </div>
+</script>

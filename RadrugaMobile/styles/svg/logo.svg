@@ -1,0 +1,80 @@
+<svg width="100%" viewBox="0 0 382 111" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="загрузка" transform="translate(-131.000000, -447.000000)">
+            <g id="Group" transform="translate(131.000000, 447.000000)">
+                <path d="M69.465,65.6 C69.465,58.866633 71.8483095,53.0166915 76.615,48.05 C81.3816905,43.0833085 86.731637,40.6 92.665,40.6 C98.798364,40.6 104.264976,43.199974 109.065,48.4 L109.065,42.2 L115.865,42.2 L115.865,89 L109.065,89 L109.065,82.9 C104.331643,88.033359 98.931697,90.6 92.865,90.6 C86.931637,90.6 81.5483575,88.1166915 76.715,83.15 C71.8816425,78.1833085 69.465,72.333367 69.465,65.6 Z M76.265,65.6 C76.265,70.733359 77.9149835,75.1499815 81.215,78.85 C84.5150165,82.5500185 88.331645,84.4 92.665,84.4 C96.998355,84.4 100.814984,82.5500185 104.115,78.85 C107.415017,75.1499815 109.065,70.733359 109.065,65.6 C109.065,60.466641 107.415017,56.0500185 104.115,52.35 C100.814984,48.6499815 96.998355,46.8 92.665,46.8 C88.331645,46.8 84.5150165,48.6499815 81.215,52.35 C77.9149835,56.0500185 76.265,60.466641 76.265,65.6 Z" id="Path" fill="#FFC175" filter="url(#filter-1)" ></path>
+                <path d="M125.565,65.6 C125.565,58.866633 127.948309,53.0166915 132.715,48.05 C137.48169,43.0833085 142.831637,40.6 148.765,40.6 C154.898364,40.6 160.364976,43.199974 165.165,48.4 L165.165,16.4 L171.965,16.4 L171.965,89 L165.165,89 L165.165,82.9 C160.431643,88.033359 155.031697,90.6 148.965,90.6 C143.031637,90.6 137.648357,88.1166915 132.815,83.15 C127.981642,78.1833085 125.565,72.333367 125.565,65.6 Z M132.365,65.6 C132.365,70.733359 134.014983,75.1499815 137.315,78.85 C140.615016,82.5500185 144.431645,84.4 148.765,84.4 C153.098355,84.4 156.914983,82.5500185 160.215,78.85 C163.515016,75.1499815 165.165,70.733359 165.165,65.6 C165.165,60.466641 163.515016,56.0500185 160.215,52.35 C156.914983,48.6499815 153.098355,46.8 148.765,46.8 C144.431645,46.8 140.615016,48.6499815 137.315,52.35 C134.014983,56.0500185 132.365,60.466641 132.365,65.6 Z" id="Path" fill="#989BF7" filter="url(#filter-2)" ></path>
+                <path d="M215.765,54.6 C213.631656,49.399974 209.798361,46.8 204.265,46.8 C200.131646,46.8 196.948344,48.566649 194.715,52.1 C192.481655,55.633351 191.365,60.133306 191.365,65.6 L191.365,89 L184.565,89 L184.565,42.2 L191.365,42.2 L191.365,45.9 C194.898351,42.366649 199.198308,40.6 204.265,40.6 C212.998377,40.6 218.898318,44.26663 221.965,51.6 L215.765,54.6 Z" id="Path" fill="#FF9782" filter="url(#filter-3)"></path>
+                <path d="M227.565,71.8 L227.565,42.2 L234.265,42.2 L234.265,71.8 C234.265,75.333351 235.54832,78.3166545 238.115,80.75 C240.681679,83.1833455 244.064979,84.4 248.265,84.4 C252.465021,84.4 255.814987,82.6166845 258.315,79.05 C260.815012,75.4833155 262.065,71.03336 262.065,65.7 L262.065,42.2 L268.965,42.2 L268.965,89 L262.065,89 L262.065,84.9 C258.198314,88.766686 253.59836,90.7 248.265,90.7 C242.331637,90.7 237.398353,89.000017 233.465,85.6 C229.531647,82.199983 227.565,77.600029 227.565,71.8 L227.565,71.8 Z" id="Path" fill="#4CD398" filter="url(#filter-4)" ></path>
+                <path d="M278.665,65.6 C278.665,58.866633 281.048309,53.0166915 285.815,48.05 C290.58169,43.0833085 295.931637,40.6 301.865,40.6 C307.998364,40.6 313.464976,43.199974 318.265,48.4 L318.265,42.2 L325.065,42.2 L325.065,87.2 C325.065,94.466703 323.181685,99.9166485 319.415,103.55 C315.648314,107.183351 310.665031,109 304.465,109 L289.065,109 L289.065,102.8 L304.465,102.8 C308.865022,102.8 312.264988,101.483346 314.665,98.85 C317.065012,96.2166535 318.265,92.333359 318.265,87.2 L318.265,82.9 C313.531643,88.033359 308.131697,90.6 302.065,90.6 C296.131637,90.6 290.748357,88.1166915 285.915,83.15 C281.081642,78.1833085 278.665,72.333367 278.665,65.6 Z M285.465,65.6 C285.465,70.733359 287.114983,75.1499815 290.415,78.85 C293.715016,82.5500185 297.531645,84.4 301.865,84.4 C306.198355,84.4 310.014983,82.5500185 313.315,78.85 C316.615017,75.1499815 318.265,70.733359 318.265,65.6 C318.265,60.466641 316.615017,56.0500185 313.315,52.35 C310.014983,48.6499815 306.198355,46.8 301.865,46.8 C297.531645,46.8 293.715016,48.6499815 290.415,52.35 C287.114983,56.0500185 285.465,60.466641 285.465,65.6 Z" id="Path" fill="#FADF6E" filter="url(#filter-5)"></path>
+                <path d="M334.765,65.6 C334.765,58.866633 337.14831,53.0166915 341.915,48.05 C346.681691,43.0833085 352.031637,40.6 357.965,40.6 C364.098364,40.6 369.564976,43.199974 374.365,48.4 L374.365,42.2 L381.165,42.2 L381.165,89 L374.365,89 L374.365,82.9 C369.631643,88.033359 364.231697,90.6 358.165,90.6 C352.231637,90.6 346.848358,88.1166915 342.015,83.15 C337.181643,78.1833085 334.765,72.333367 334.765,65.6 Z M341.565,65.6 C341.565,70.733359 343.214984,75.1499815 346.515,78.85 C349.815017,82.5500185 353.631645,84.4 357.965,84.4 C362.298355,84.4 366.114984,82.5500185 369.415,78.85 C372.715017,75.1499815 374.365,70.733359 374.365,65.6 C374.365,60.466641 372.715017,56.0500185 369.415,52.35 C366.114984,48.6499815 362.298355,46.8 357.965,46.8 C353.631645,46.8 349.815017,48.6499815 346.515,52.35 C343.214984,56.0500185 341.565,60.466641 341.565,65.6 Z" id="Path" fill="#E88DCA" filter="url(#filter-6)" ></path>
+                <path d="M0.805,89 L0.805,0.34 L29.145,0.34 C34.4316931,0.34 39.3499772,1.22832445 43.9,3.005 C48.4500227,4.78167555 52.3066508,7.7066463 55.47,11.78 C58.6333491,15.8533537 60.215,20.7499714 60.215,26.47 C60.215,33.0566996 58.2866859,38.4299792 54.43,42.59 C50.573314,46.7500208 45.611697,49.6099922 39.545,51.17 L61.385,89 L50.595,89 L29.535,52.47 L29.405,52.47 L10.555,52.47 L10.555,89 L0.805,89 Z M10.555,8.53 L10.555,44.28 L29.145,44.28 C35.0383628,44.28 39.913314,42.741682 43.77,39.665 C47.6266859,36.5883179 49.555,32.1900286 49.555,26.47 C49.555,20.7499714 47.6266859,16.3300156 43.77,13.21 C39.913314,10.0899844 35.0383628,8.53 29.145,8.53 L10.555,8.53 Z" id="Path" fill="#5CC6E4" filter="url(#filter-7)" ></path>
+            </g>
+        </g>
+    </g>
+</svg>

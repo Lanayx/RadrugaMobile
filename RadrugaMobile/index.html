@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="Windows-1251" />
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' kendo.min.all.js gap: http: https: file:">
+    <link href="styles/kendo/kendo-mobile/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/all.min.css" rel="stylesheet" />
+    <title>Radruga</title>
+    <style>
+        body{ background-color:#30323a; }
+    </style>
+</head>
+<body>
+    <div data-role="view" data-layout="" id="vLoading">
+        Loading...
+    </div>
+
+    <div data-role="layout" data-id="empty-layout">
+    </div>
+
+    <div data-role="layout" data-id="start-layout">
+        <header data-role="header">
+            <div class="startHeaderImageOuter">
+                <div class="startHeaderImage"></div>
+            </div>
+            <div class="startHeaderImageBottom"></div>
+        </header>
+    </div>
+
+    <div data-role="layout" data-id="close-layout">
+        <header class="headCommon" data-role="header">
+            <a class="mediumIcon closeIcon"></a>
+        </header>
+    </div>
+    <div data-role="layout" data-id="back-layout">
+        <header class="headCommon" data-role="header">
+            <a class="mediumIcon backIcon"></a>
+        </header>
+    </div>
+
+
+    <div data-role="layout" data-id="mission-layout">
+        <footer id="missionFooter" data-role="footer">
+            <a id="surrenderButton" data-role="button" class="redButton"></a>
+            <a id="solveButton" data-role="button" class="greenButton"></a>
+        </footer>
+    </div>
+
+    <div data-role="modalview" id="vmHints" data-modal="true" style="width: 80%;height:45%; display:none;">
+        <div data-role="header" class="modalHeader">
+            <div></div>
+            <div class="modalTitle" data-bind="text:modalTitleRes"></div>
+            <div>
+                <a class="mediumIcon closeIcon" data-bind="click: closeModalView"></a>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul id="hintsList" class="hintsList" data-role="listview" data-bind="source:hints, invisible:isHintVisible" data-template="hints-template"></ul>
+            <div class="hintText" data-bind="visible:isHintVisible, text:hintText"></div>
+        </div>
+    </div>
+    <script type="text/x-kendo-template" id="hints-template">
+        <div class="coinsCountWrapper" data-bind="click: getHint">
+            <div class="coinsLogo" style="#= isPayed ? 'opacity: 0.2;' : ''#" ></div>
+            <div class="coinsCount" data-bind="text: score"></div>
+            <div class="coinsText" data-bind="text: #= isPayed ? 'showRes' : 'takeRes'#, click: getHint"></div>
+        </div>
+    </script>
+
+    <!-- ReSharper disable once Html.PathError -->
+    <script src="cordova.js"></script>
+    <script data-main="scripts/Startup" src="scripts/libs/require.min.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
